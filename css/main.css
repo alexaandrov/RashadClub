@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	min-width: 320px;
+	min-width: 250px;
+	min-height: 500px;
 }
 
 a {
@@ -19,9 +20,7 @@ h3 {
 	font-size: 30px;
 }
 
-
 /* IMPORT FONTS */
-
 /* font-family: "RobotoLight"; */
 @font-face {
     font-family: "RobotoLight";
@@ -33,8 +32,9 @@ h3 {
     font-weight: normal;
 }
 
-
 #top {
+	min-height: 500px;
+	min-width: 250px;
 	background-image: url(../img/main.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -93,12 +93,11 @@ h3 {
 .bn {
 	margin: 0 auto;
 	height: 80px;
-	top: -80px;
+	top: -180px;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
 }
-	
 
 #top .menu {
 	margin: 0 auto;
@@ -126,7 +125,7 @@ h3 {
 	cursor: pointer;
 }
 
-#top p {
+#top .menu p {
 	font-family: RobotoLight;
 	color: white;
 	font-weight: bold;
@@ -211,7 +210,7 @@ h3 {
 	-webkit-transition: all 0.5s ease-out;
 }
 
-.phone {
+#top .phone {
 	display: inline-block;
 	width: 50px;
 	height: 82px;
@@ -220,4 +219,48 @@ h3 {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
+}
+
+/* MEDIA */
+@media (max-width: 450px) {
+	#top .menu > ul > li {
+		display: block;
+		background-color: white;
+		margin: 5px;
+	}
+	#top .menu > ul > li > a {
+		color: black;
+		font-weight: bold;
+	}
+	#top .bnovo {
+		height: 15%;
+	}
+	#top .menu {
+		padding-top: 0;
+		height: 65%;
+	}
+	#top .menu p {
+		padding-top: 10px;
+	}
+	#top .rashad-logo {
+		background-image: url(../img/top/rashad-club-active.png);
+		height: 35%;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#top .button {
+		font-size: 15px;
+		padding: 15px;
+		width: 150px;
+	}
+	#top .contacts {
+		padding-top: 20px;
+	}
+	#top .contacts a {
+		font-size: 20px;
+	}
+	#top .phone {
+		width: 25px;
+		height: 50px;
+	}
 }
