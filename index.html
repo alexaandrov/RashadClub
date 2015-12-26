@@ -5,13 +5,20 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-<!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+	<script src="http://widget.bnovo.ru/js/bnovo.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 </head>
 <body>
 
 <main> 
 	<div class="section" id="top">
+		<div class="bnovo">
+			<div class="bn_wrapper bn" id="bn_wrapper">
+				<div id="_bn_widget_"><a href="http://bnovo.ru/" target="_blank">Bnovo</a></div>
+			</div>
+			<div class="button" onclick="showBnovo();">Забронировать онлайн</div>
+		</div>
 		<div class="menu">
 			<a href="index.html"><div class="rashad-logo"></div></a>
 			<p>Лучшие гостиничные номера Крыма для Вас!</p>
@@ -27,5 +34,8 @@
 		</div>
 	</div>
 </main>
+
+<!-- SCRIPTS -->
+<script src="js/bnovo_form.js"></script>
 </body>
 </html>

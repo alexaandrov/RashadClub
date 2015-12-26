@@ -54,9 +54,56 @@ h3 {
 	overflow: hidden;
 }
 
+#top .button {
+	/*display: none;*/
+	overflow: hidden;
+	margin: 10px auto;
+	border: 1px solid #719E5B;
+	padding: 15px;
+	width: 300px;
+	text-align: center;
+	font-family: RobotoLight;
+	font-size: 25px;
+	cursor: pointer;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	border-radius: 3px;
+}
+
+#top .button:hover {
+	background-color: #719E5B;
+	color: white;
+}
+
+#top .button:active {
+	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	-webkit-transition: all 0.1s ease;
+}
+
+#top .bn_wrapper {
+	position: absolute;
+	width: 100%;
+}
+
+.bn {
+	margin: 0 auto;
+	height: 80px;
+	top: -80px;
+	/*margin: 0 auto;*/
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+	
+
 #top .menu {
 	margin: auto auto;
-	margin-top: 300px;
+	margin-top: 200px;
 	height: 400px;
 	width: 500px;
 }
@@ -66,8 +113,8 @@ h3 {
 	background-size: 100% 100%;
 	height: 150px;
 	width: 100%;
-	-moz-transition: all 1.5s ease-out;
-	-o-transition: all 1.5s ease-out;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 }
 
@@ -111,10 +158,12 @@ h3 {
 	color: black;
 }
 #top .menu > ul > li:active {
-	box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
-	-webkit-box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
-	-moz-box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
-	-o-box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
+	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
 }
 #top .menu > ul > li > a {
 	font-family: RobotoLight;
@@ -146,7 +195,6 @@ h3 {
 	max-width: 250px;
 	margin-top: 100px;
 	display: inline-block;
-
 }
 
 #top .block1 {
