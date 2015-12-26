@@ -4,7 +4,7 @@ function showBnovo() {
 	btn = $('.button')[0];
 	bnovo.style.cssText="top: 20px;"
 	btn.style.cssText="display: none;"
-	$('.menu')[0].style.cssText="margin-top: 275px;";
+	// $('.menu')[0].style.cssText="margin-top: 24.1%;";
 }
 
 // Bnovo form

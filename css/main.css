@@ -33,11 +33,6 @@ h3 {
     font-weight: normal;
 }
 
-.section {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
-}
 
 #top {
 	background-image: url(../img/main.jpg);
@@ -45,17 +40,22 @@ h3 {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+	margin: 0 auto;
+    position: absolute;
 	z-index: 1;
     width: 100%;
     height: 100%;
-    position: absolute;
     left: 0;
     top: 0;
+	padding: 0;
 	overflow: hidden;
 }
 
+#top .bnovo {
+	height: 20%;
+}
+
 #top .button {
-	/*display: none;*/
 	overflow: hidden;
 	margin: 10px auto;
 	border: 1px solid #719E5B;
@@ -94,7 +94,6 @@ h3 {
 	margin: 0 auto;
 	height: 80px;
 	top: -80px;
-	/*margin: 0 auto;*/
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
@@ -102,16 +101,17 @@ h3 {
 	
 
 #top .menu {
-	margin: auto auto;
-	margin-top: 200px;
-	height: 400px;
-	width: 500px;
+	margin: 0 auto;
+	padding-top: 8%;
+	height: 50%;
+	max-width: 500px;
+	width: 100%:;
 }
 
 #top .rashad-logo {
 	background-image: url(../img/top/rashad-club.png);
 	background-size: 100% 100%;
-	height: 150px;
+	height: 40%;
 	width: 100%;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -121,7 +121,7 @@ h3 {
 #top .rashad-logo:hover {
 	background-image: url(../img/top/rashad-club-active.png);
 	background-size: 100% 100%;
-	height: 220px;
+	height: 55%;
 	width: 100%;
 	cursor: pointer;
 }
@@ -153,10 +153,12 @@ h3 {
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
 }
+
 #top .menu > ul > li:hover {
 	background-color: white;
 	color: black;
 }
+
 #top .menu > ul > li:active {
 	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
@@ -165,6 +167,7 @@ h3 {
 	-o-transition: all 0.2s ease;
 	-webkit-transition: all 0.2s ease;
 }
+
 #top .menu > ul > li > a {
 	font-family: RobotoLight;
 	padding: 0;
@@ -181,6 +184,7 @@ h3 {
 }
 
 #top .contacts {
+	height: 10%;
 	text-align: center;
 }
 
@@ -193,7 +197,6 @@ h3 {
 #top .wrap {
 	margin: 0 auto;
 	max-width: 250px;
-	margin-top: 100px;
 	display: inline-block;
 }
 
@@ -217,9 +220,4 @@ h3 {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
-}
-
-.phone:hover {
-	width: 65px;
-	height: 90px;
 }
