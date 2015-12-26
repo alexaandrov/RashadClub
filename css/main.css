@@ -128,3 +128,48 @@ h3 {
 #top .block > ul > li > a:hover {
 	color: black;
 }
+
+#top .contacts {
+	text-align: center;
+}
+
+#top .contacts a {
+	font-family: RobotoLight;
+	font-size: 30px;
+	color: white;
+}
+
+#top .wrap {
+	margin: 0 auto;
+	max-width: 250px;
+	margin-top: 100px;
+	display: inline-block;
+
+}
+
+#top .block1 {
+	vertical-align: top;
+}
+
+#top .contacts a:hover {
+	color: #6495ed;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+
+.phone {
+	display: inline-block;
+	width: 50px;
+	height: 82px;
+	background-image: url(../img/icons/phone.png);
+	background-size: 100% 100%;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+
+.phone:hover {
+	width: 65px;
+	height: 90px;
+}
