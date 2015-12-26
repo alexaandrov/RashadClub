@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h2 {
+	font-family: RobotoLight;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: RobotoLight;
+	font-size: 30px;
+}
+
+
+/* IMPORT FONTS */
+
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.section {
+	width: 100%;
+	max-width: 2048px;
+	padding: 0;
+	margin: 0;
+}
+
+#top {
+	background-image: url(../img/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	/*background-*/
+	background-size: 100% 1000px;
+	height: 950px; 
+	overflow: hidden;
+}
+
+#top .block {
+	margin: auto auto;
+	margin-top: 300px;
+	/*background-color: red;*/
+	height: 400px;
+	width: 500px;
+}
+
+#top .rashad-logo {
+	background-image: url(../img/top/rashad-club.png);
+	background-size: 100% 100%;
+	height: 150px;
+	width: 100%;
+	-moz-transition: all 1.5s ease-out;
+	-o-transition: all 1.5s ease-out;
+	-webkit-transition: all 1s ease;
+}
+
+#top .rashad-logo:hover {
+	background-image: url(../img/top/rashad-club-active.png);
+	background-size: 100% 100%;
+	height: 220px;
+	width: 100%;
+	cursor: pointer;
+}
+
+#top p {
+	font-family: RobotoLight;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#top .block > ul {
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 0;
+	text-align: center;
+}
+
+#top .block > ul > li {
+	display: inline-block;
+	list-style-type: none;
+	border: 2px solid white;
+	border-radius: 2px;
+	cursor: pointer;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+#top .block > ul > li:hover {
+	background-color: white;
+	color: black;
+}
+#top .block > ul > li:active {
+	box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
+	-webkit-box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
+	-moz-box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
+	-o-box-shadow: inset 1px 2px 64px 7px #ABABAB,1px 3px 5px 1px #242424;
+}
+#top .block > ul > li > a {
+	font-family: RobotoLight;
+	padding: 0;
+	margin: 0;
+	display: block;
+	color: black;
+	font-size: 18px;
+	color: white;
+	padding: 10px;
+}
+
+#top .block > ul > li > a:hover {
+	color: black;
+}
