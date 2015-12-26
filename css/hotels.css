@@ -99,20 +99,20 @@ h3 {
 	font-weight: bold;
 	font-size: 18px;
 	font-family: RobotoLight;
-	-moz-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
 }
 
 .header .nav-menu > li > a:hover {
-	color: #F3F1EB;
+	text-shadow: 2px 2px 0px rgba(150, 150, 150, 0.74);
 }
 
 .header .nav-menu > li > a:active {
-	color: #301A0B;
-	-moz-transition: all 0.08s ease-out;
-	-o-transition: all 0.08s ease-out;
-	-webkit-transition: all 0.08s ease-out;
+	color: white;
+	-moz-transition: all 0.03s ease-out;
+	-o-transition: all 0.03s ease-out;
+	-webkit-transition: all 0.03s ease-out;
 }
 
 /* GALLERY */
