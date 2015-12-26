@@ -1,18 +1,22 @@
 body {
-	margin: 0;
+	background: #F1f1f2;
 	padding: 0;
-	min-width: 320px;
+	text-align: center;
+	font-family: 'open sans';
+	position: relative;
+	margin: 0;
+	height: 100%;
 }
 
 /* font-family: "RobotoLight"; */
 @font-face {
-    font-family: "RobotoLight";
-    src: url("../fonts/RobotoLight/RobotoLight.eot");
-    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }
 
 a {
@@ -109,4 +113,98 @@ h3 {
 	-moz-transition: all 0.08s ease-out;
 	-o-transition: all 0.08s ease-out;
 	-webkit-transition: all 0.08s ease-out;
+}
+
+/* GALLERY */
+.wrapper {
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+.main {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 180px;
+	margin-bottom: 20px;
+}
+
+.clear {
+	width: auto;
+}
+
+.tps-section {
+	width: 100% !important;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.tps-section .tps-wrapper {
+	border-radius: 5px;
+	}
+
+.tps-section .tps-wrapper a {
+	position: absolute;
+	background: rgba(0,0,0,0.25);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	left: 0;
+	color: white;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+
+.tps-section .tps-wrapper a:hover {
+	background: rgba(0,0,0,0.55);
+}
+
+.tps-section .tps-wrapper a:active {
+	background: rgba(0,0,0,0.75);
+}
+
+.tps-section .tps-wrapper a h1 {
+	margin: 20px;
+	margin-bottom: 10px;
+	padding: 0;
+	font-family: RobotoLight;
+	padding-top: 255px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 100;
+	font-size: 45px;
+}
+
+.tps-section .tps-wrapper a p {
+	margin: 0;
+	padding: 0;
+	text-transform: none;
+	font-family: RobotoLight;
+	font-style: italic;
+	font-weight: lighter;
+	font-family: noto serif;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+.tps-section:nth-child(1n+1) .tps-wrapper {
+	background: url(../img/hotels/comfort/main.jpg) center center;
+	background-size: cover;
+}
+.tps-section:nth-child(2n+1) .tps-wrapper {
+	background:  url(../img/hotels/lux/main.jpg) center center;
+	background-size: cover;
+}
+.tps-section:nth-child(3n+1) .tps-wrapper {
+	background:  url(../img/hotels/vip/main.jpg) center center;
+	background-size: cover;
+}
+.tps-section:nth-child(4n+1) .tps-wrapper {
+	background:  url(demo4.jpg) center center;
+	background-size: cover;
 }
