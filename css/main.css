@@ -55,6 +55,31 @@ h3 {
 	height: 20%;
 }
 
+#top .btn_cross {
+	float: right;
+	position: absolute;
+	right: -28px;
+	top: 0px;
+	z-index: 10000;
+	background-image: url(../img/icons/cross.png);
+	background-size: 100%;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+#top #_bn_widget_ a {
+	top: 126px;
+}
+
+#top .btn_cross:hover {
+	background-image: url(../img/icons/cross-active.png);
+}
+
+#top .btn_cross:active {
+	background-image: url(../img/icons/cross.png);
+}
+
 #top .button {
 	overflow: hidden;
 	margin: 10px auto;
@@ -77,9 +102,6 @@ h3 {
 }
 
 #top .button:active {
-	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
-	box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
 	-moz-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
 	-webkit-transition: all 0.1s ease;
