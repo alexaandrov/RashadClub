@@ -1,0 +1,343 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: RobotoLight;
+	min-width: 250px;
+	min-height: 500px;
+	background: #f2f2f2;
+}
+
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+h2 {
+	font-family: 'Poiret One';
+	font-size: 40px;
+	text-align: center;
+	padding: 0;
+	margin-top: -20px;
+	margin: 0;
+}
+
+.header_separator {
+	font-family: 'Poiret One';
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.main-header {
+	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.55);
+}
+
+h3 {
+	font-family: RobotoLight;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.block_separator {
+	background-image: url(../../img/hotels/block_separator.png);
+	height: 4px;
+	width: 40%;
+	margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.header .wrapper {
+	width: 100%;
+	display: block;
+	max-width: 1280px;
+	position: absolute;
+	z-index: 10;
+}
+
+.header .logo {
+	float: left;
+}
+
+.header .logo .img {
+	display: block;
+	width: 350px;
+	height: 85px;
+	margin: 20px 0px;
+	background-image: url(../../img/header/rashad.png);
+	background-size: 100% 75px;
+	background-repeat: no-repeat;
+	-moz-transition: all 0.8s ease-out;
+	-o-transition: all 0.8s ease-out;
+	-webkit-transition: all 0.8s ease-out;
+}
+
+.header .logo .img:hover {
+	background-image: url(../../img/header/rashad-hover.png);
+}
+
+.header .logo .img:active {
+	background-image: url(../../img/header/rashad.png);
+	-moz-transition: all 0.03s ease-out;
+	-o-transition: all 0.03s ease-out;
+	-webkit-transition: all 0.03s ease-out;
+}
+
+.header .logo a {
+	padding-top: 50px;
+}
+
+.header .nav-menu {
+	display: table-cell;
+	float: right;
+	margin-top: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.header .nav-menu > li {
+	float: left;
+	display: inline-block;
+}
+
+.header .nav-menu > li > a {
+	display: table-cell;
+	padding: 35px 8px;
+	margin:  0px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: RobotoLight;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
+	color: white;
+	text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.55);
+}
+
+.header .nav-menu > li > a:hover {
+	color: black;
+	text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.65);
+}
+
+.header .nav-menu > li > a:active {
+	color: white;
+	text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.55);
+	-moz-transition: all 0.01s ease-out;
+	-o-transition: all 0.01s ease-out;
+	-webkit-transition: all 0.01s ease-out;
+}
+/* END HEADER */
+
+.main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+section {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* TOP Section*/
+#top {
+	position: relative;
+	background-size: 100% 70%;
+	background-attachment: fixed;
+	height: 600px;
+	text-align: center;
+}
+
+#top .wrapper {
+	background: rgba(0,0,0,0.15);
+	height: 100%;
+}
+
+#top h1 {
+	text-align: center;
+	padding-top: 200px;
+	color: white;
+	font-size: 100px;
+	font-weight: 400;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+#top i {
+	color: white;
+	font-size: 80px;
+	text-align: center;
+	bottom: 20px;
+	cursor: pointer;
+	margin-top: 250px;
+	text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.34);
+}
+/* END sec.*/
+
+/* COMFORT Section */
+#comfort {
+	max-width: 1180px;
+	margin: 0 auto;
+	width: 100%;
+	height: 620px;
+}
+
+#comfort .block {
+	overflow: hidden;
+	display: inline-block;
+	margin: 50px 1%;
+	width: 30%;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+}
+
+#comfort .block > ul > li {
+	font-size: 20px;
+	list-style-image: url(../../img/hotels/block_separator_green.png);
+	padding: 3px 0;
+	cursor: default;
+}
+
+#comfort .block .items_img {
+	margin: 0 auto; 
+	background-size: 100% 120px;
+	width: 45%;
+	height: 120px;
+	margin-top: 15px;
+}
+
+#comfort .item1 .items_img {
+	background-image: url(../../img/hotels/vip/comfort/tv.png);
+}
+
+#comfort .item2 .items_img {
+	background-image: url(../../img/hotels/vip/comfort/interior.png);
+}
+
+#comfort .item3 .items_img {
+	background-image: url(../../img/hotels/vip/comfort/services.png);
+}
+
+/* SLIDESHOW section*/
+#slider {
+	position: relative;
+	margin: 50px auto;
+	padding: 0px;
+	width: 100%;
+	height: 600px;
+}
+
+#slider #scr {
+	margin: 20px auto;
+	width: 90%;
+	height: 100%;
+	margin-top:0px;
+	background-color: white;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	-mox-box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
+}
+
+#slider .buttons {
+	width: 25px;
+	height: 70px;
+	float: left;
+	ont-size: 80px;
+	cursor: pointer;
+	opacity: 0.7;
+	outline: none;
+	font-size: 70px;
+	color: black;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+}
+
+#slider .buttons:hover {
+	opacity: 0.8;
+	color: white;
+}
+
+#slider .buttons:active {
+	opacity: 1;
+	color: black;
+}
+
+#slider .left {
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	padding: 250px 0px;
+	padding-right: 52%;
+}
+
+#slider .right {
+	position: absolute;
+	right: 50px;
+	top: 0px;
+	padding: 250px 0px;
+	padding-left: 47%;
+}
+
+#slider .navigation {
+	margin-top: -50px;
+	padding-right: 50px;
+	display: block;
+	text-align: center;
+	cursor: default;
+}
+
+#slider .navigation li {
+	display: inline-block;
+	list-style-type: none;
+	font-size: 17px;
+	padding-left: 3px;
+	color: black;
+	cursor: pointer;
+	opacity: 0.5;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+}
+/* SLIDESHOW end */
+

@@ -1,9 +1,109 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html>
 <head>
 	<title>Rashad - LUX</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/hotels/hotels.css">
+	<link rel="stylesheet" href="../css/hotels/lux.css">
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<!-- SLIDESHOW -->
+	<script type="text/javascript" src="../js/slideshow/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slideshow/slider.js"></script>
+    <!-- SLIDESHOW END -->
 </head>
 <body>
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="logo"><i class="main-header-logo"><a href="../index.html"><i class="img"></i></a></i>
+			</div>
+			<nav class="navigation">
+				<ul class="nav-menu">
+					<li><a href="../apartments.html">Апартаменты</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">О клубе Рашад</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="main">
+		<section id="top">
+			<div class="wrapper">
+				<h1>Люкс</h1>
+				<a href="#comfort"><i class="fa fa-chevron-circle-down"></i></a>
+			</div>
+		</section>
+
+		<section id="comfort">
+			<header class="main-header">
+				<p class="header_separator">~~~~~~~~</p>
+				<h2>Удобства</h2>
+			</header>
+			<div class="block item1">
+				<div class="items_img"></div>
+				<h3>Медиа</h3>
+				<div class="block_separator"></div>
+				<ul>
+					<li>Плазменный телевизор 50″</li>
+					<li>Спутниковое ТВ 180 каналов</li>
+					<li>Смарт ТВ</li>
+					<li>Интернет</li>
+				</ul>
+			</div>
+			<div class="block item2">
+				<div class="items_img"></div>
+				<h3>Интерьер</h3>
+				<div class="block_separator"></div>
+				<ul>
+					<li>Кухня</li>
+					<li>Ванная комната</li>
+					<li>Шкафы</li>
+					<li>Просторный балкон</li>
+					<li>Прекрасное освещение</li>
+					<li>Посуда</li>
+					<li>Белье</li>
+				</ul>
+			</div>
+			<div class="block item3">
+				<div class="items_img"></div>
+				<h3>Услуги</h3>
+				<div class="block_separator"></div>
+				<ul>
+					<li>Уборка номера</li>
+					<li>Приготовление пищи</li>
+					<li>Транспортные услуги (трансфер)</li>
+					<li>Стрика, глажка белья</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="slideshow"> 
+			<header class="main-header">
+				<p class="header_separator">~~~~~~~~</p>
+				<h2>Апартаменты</h2>
+			</header>
+			<div id="slider">
+				<i class="buttons left fa fa-chevron-left" onclick="slider.left();"></i>
+				<div id="scr"></div>
+				<ul class="navigation">
+					<li class="nav" id="n0"><i class="fa fa-circle" onclick="slider.navigation(0)"></i></li>
+					<li id="n1"><i class="fa fa-circle" onclick="slider.navigation(1)"></i></li>
+					<li id="n2"><i class="fa fa-circle" onclick="slider.navigation(2)"></i></li>
+					<li id="n3"><i class="fa fa-circle" onclick="slider.navigation(3)"></i></li>
+					<li id="n4"><i class="fa fa-circle" onclick="slider.navigation(4)"></i></li>
+					<li id="n5"><i class="fa fa-circle" onclick="slider.navigation(5)"></i></li>
+					<li id="n6"><i class="fa fa-circle" onclick="slider.navigation(6)"></i></li>
+					<li id="n7"><i class="fa fa-circle" onclick="slider.navigation(7)"></i></li>
+					<li id="n8"><i class="fa fa-circle" onclick="slider.navigation(8)"></i></li>
+				</ul>
+				<i class="buttons right fa fa-chevron-right" onclick="slider.right();"></i>
+			</div>
+		</section>
 
 </body>
 </html>
