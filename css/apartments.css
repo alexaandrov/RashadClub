@@ -4,7 +4,7 @@ body {
 	font-family: RobotoLight;
 	min-width: 250px;
 	min-height: 500px;
-	background: #f1f1f2;
+	background: #f2f2f2;
 }
 
 /* font-family: "RobotoLight"; */
@@ -27,16 +27,45 @@ h1 {
 	font-family: 'Poiret One', cursive;
 	margin: 0;
 	padding: 0;
+	cursor: default;
 }
 
 h2 {
-	font-family: RobotoLight;
+	font-family: 'Poiret One';
 	font-size: 40px;
+	text-align: center;
+	padding: 0;
+	margin-top: -20px;
+	margin: 0;
+}
+
+.header_separator {
+	font-family: 'Poiret One';
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.main-header {
+	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.55);
 }
 
 h3 {
 	font-family: RobotoLight;
 	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.block_separator {
+	background-image: url(../img/hotels/block_separator.png);
+	height: 4px;
+	width: 40%;
+	margin: 0 auto;
 }
 
 /* HEADER */
@@ -126,7 +155,6 @@ h3 {
 	-o-transition: all 0.01s ease-out;
 	-webkit-transition: all 0.01s ease-out;
 }
-
 /* END HEADER */
 
 .main {
@@ -136,13 +164,16 @@ h3 {
 }
 
 section {
+	margin: 0 auto;
 	width: 100%;
 }
 
+/* TOP Section*/
 #top {
 	position: relative;
 	background-image: url(../img/hotels/vip/main_600.jpg);
-	background-position: ;
+	background-size: 100% 70%;
+	background-attachment: fixed;
 	height: 600px;
 	text-align: center;
 }
@@ -171,4 +202,52 @@ section {
 	cursor: pointer;
 	margin-top: 250px;
 	text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.34);
+}
+/* END sec.*/
+
+/* COMFORT Section */
+#comfort {
+	max-width: 1120px;
+	width: 100%;
+	height: 800px;
+}
+
+#comfort .block {
+	overflow: hidden;
+	display: inline-block;
+	margin: 50px 1.3%;
+	width: 30%;
+	/*height: 480px;*/
+	/*opacity: 0.9;*/
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+}
+
+#comfort .block > ul > li {
+	font-size: 20px;
+	list-style-image: url(../img/hotels/block_separator_green.png);
+	padding: 3px 15px;
+	cursor: default;
+}
+
+#comfort .block .items_img {
+	margin: 0 auto; 
+	background-size: 100% 120px;
+	width: 45%;
+	height: 120px;
+	margin-top: 15px;
+}
+
+#comfort .item1 .items_img {
+	background-image: url(../img/hotels/vip/comfort/tv.png);
+}
+
+#comfort .item2 .items_img {
+	background-image: url(../img/hotels/vip/comfort/interior.png);
+}
+
+#comfort .item3 .items_img {
+	background-image: url(../img/hotels/vip/comfort/services.png);
 }
