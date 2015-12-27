@@ -64,7 +64,6 @@ h3 {
 	width: 350px;
 	height: 85px;
 	margin: 20px 0px;
-	opacity: 0.9;
 	background-image: url(../img/header/rashad.png);
 	background-size: 100% 75px;
 	background-repeat: no-repeat;
@@ -73,12 +72,15 @@ h3 {
 	-webkit-transition: all 0.8s ease-out;
 }
 
-.header .logo .img:hover{
-	opacity: 1;
+.header .logo .img:hover {
+	background-image: url(../img/header/rashad-hover.png);
 }
 
-.header .logo .img:hover {
-	background-image: url(../img/header/rashad-active.png);
+.header .logo .img:active {
+	background-image: url(../img/header/rashad.png);
+	-moz-transition: all 0.03s ease-out;
+	-o-transition: all 0.03s ease-out;
+	-webkit-transition: all 0.03s ease-out;
 }
 
 .header .logo a {
@@ -103,23 +105,29 @@ h3 {
 	padding: 35px 8px;
 	margin:  0px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: RobotoLight;
 	-moz-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
 	-webkit-transition: all 0.4s ease-out;
+	color: white;
+	text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.55);
 }
 
 .header .nav-menu > li > a:hover {
-	text-shadow: 2px 2px 0px rgba(150, 150, 150, 0.74);
+	color: black;
+	text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.65);
 }
 
 .header .nav-menu > li > a:active {
 	color: white;
-	-moz-transition: all 0.03s ease-out;
-	-o-transition: all 0.03s ease-out;
-	-webkit-transition: all 0.03s ease-out;
+	text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.55);
+	-moz-transition: all 0.01s ease-out;
+	-o-transition: all 0.01s ease-out;
+	-webkit-transition: all 0.01s ease-out;
 }
+
+/* END HEADER */
 
 .main {
 	margin: 0;
