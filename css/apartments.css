@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: RobotoLight;
+	min-width: 250px;
+	min-height: 500px;
+	background: #f1f1f2;
+}
+
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: RobotoLight;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: RobotoLight;
+	font-size: 30px;
+}
+
+/* HEADER */
+.header {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.header .wrapper {
+	width: 100%;
+	display: block;
+	max-width: 1280px;
+	position: absolute;
+	z-index: 10;
+}
+
+.header .logo {
+	float: left;
+}
+
+.header .logo .img {
+	display: block;
+	width: 350px;
+	height: 85px;
+	margin: 20px 0px;
+	opacity: 0.9;
+	background-image: url(../img/header/rashad.png);
+	background-size: 100% 75px;
+	background-repeat: no-repeat;
+	-moz-transition: all 0.8s ease-out;
+	-o-transition: all 0.8s ease-out;
+	-webkit-transition: all 0.8s ease-out;
+}
+
+.header .logo .img:hover{
+	opacity: 1;
+}
+
+.header .logo .img:hover {
+	background-image: url(../img/header/rashad-active.png);
+}
+
+.header .logo a {
+	padding-top: 50px;
+}
+
+.header .nav-menu {
+	display: table-cell;
+	float: right;
+	margin-top: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.header .nav-menu > li {
+	float: left;
+	display: inline-block;
+}
+
+.header .nav-menu > li > a {
+	display: table-cell;
+	padding: 35px 8px;
+	margin:  0px;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: RobotoLight;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
+}
+
+.header .nav-menu > li > a:hover {
+	text-shadow: 2px 2px 0px rgba(150, 150, 150, 0.74);
+}
+
+.header .nav-menu > li > a:active {
+	color: white;
+	-moz-transition: all 0.03s ease-out;
+	-o-transition: all 0.03s ease-out;
+	-webkit-transition: all 0.03s ease-out;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+section {
+	width: 100%;
+}
+
+#top {
+	position: relative;
+	background-image: url(../img/hotels/vip/main_600.jpg);
+	background-position: ;
+	height: 600px;
+	text-align: center;
+}
+
+#top .wrapper {
+	background: rgba(0,0,0,0.15);
+	height: 100%;
+}
+
+#top h1 {
+	text-align: center;
+	padding-top: 200px;
+	color: white;
+	font-size: 100px;
+	font-weight: 400;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+#top i {
+	color: white;
+	font-size: 80px;
+	text-align: center;
+	bottom: 20px;
+	cursor: pointer;
+	margin-top: 250px;
+	text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.34);
+}
