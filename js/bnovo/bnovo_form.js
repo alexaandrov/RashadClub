@@ -2,9 +2,12 @@
 function showBnovo() {
 	var bnovo = document.getElementById('bn_wrapper');
 	var btn = $('.button')[0];
-	bnovo.style.cssText="top: 20px;"
+	bnovo.style.cssText="display: block;"
+	function show() {
+		bnovo.style.cssText="top: 20px;"
 	btn.style.cssText="-khtml-opacity: 0; opacity: 0;-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-moz-opacity: 0;"
-	var menu = $('.menu')[0];
+	}
+	setTimeout(show, 00050)
 }
 
 function hideBnovo() {
@@ -12,11 +15,10 @@ function hideBnovo() {
 	var btn = $('.button')[0];
 	bnovo.style.cssText="top: -180px;"
 	btn.style.cssText="display: block;"
-	var menu = $('.menu')[0];
 	function hide() {
-		$('.bn')[0].style.cssText="display:none;";
+		bnovo.style.cssText="display: none;"
 	}
-	setTimeout(hide, 0400)
+	setTimeout(hide, 0600)
 }
 
 // Bnovo form
