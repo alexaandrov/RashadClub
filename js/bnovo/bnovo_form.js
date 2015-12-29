@@ -23,7 +23,7 @@ function hideBnovo() {
 Bnovo_Widget.init(function(){
 	 Bnovo_Widget.open('_bn_widget_', {
 			 type: "vertical",
-			 lcode: "1234567890",
+			 lcode: "1450710673",
 			 lang: "ru",
 			 width: "80%",
 			 background: "#555555",
@@ -33,6 +33,8 @@ Bnovo_Widget.init(function(){
 			 btn_background: "#719E5B",
 			 btn_background_over: "#719E5B",
 			 btn_textcolor: "#FFFFFF",
-			 btn_textover: "#FFFFFF"
+			 btn_textover: "#FFFFFF",
+			 nights_min: "3"
+
 	});
 });

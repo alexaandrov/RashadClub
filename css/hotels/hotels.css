@@ -171,7 +171,7 @@ section {
 /* TOP Section*/
 #top {
 	position: relative;
-	background-size: 100% 70%;
+	/*background-size: 100% 100%;*/
 	background-attachment: fixed;
 	height: 600px;
 	text-align: center;
@@ -199,8 +199,16 @@ section {
 	text-align: center;
 	bottom: 20px;
 	cursor: pointer;
-	margin-top: 250px;
+	margin-top: 40px;
 	text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.34);
+}
+
+
+#top .bn_wrapper {
+	margin: 0 auto;
+	margin-top: 30px;
+	max-width: 500px;
+	width: 100%;
 }
 /* END sec.*/
 
@@ -340,4 +348,16 @@ section {
 	-webkit-transition: all 0.3s ease-out;
 }
 /* SLIDESHOW end */
+#top .button {
+	margin: 0 auto;
+	width: 100px;
+	height: 40px;
+	vertical-aling: center;
+	background-color: #787878;
+	cursor: pointer;
+	color: white;
+}
 
+#top .button:hover {
+	background-color: #646464;
+}
