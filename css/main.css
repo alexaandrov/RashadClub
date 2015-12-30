@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	min-width: 250px;
 	min-height: 500px;
+	font-family: RobotoLight, Arial;
 }
 
 a {
@@ -11,12 +12,10 @@ a {
 }
 
 h2 {
-	font-family: RobotoLight;
 	font-size: 40px;
 }
 
 h3 {
-	font-family: RobotoLight;
 	font-size: 30px;
 }
 
@@ -148,7 +147,6 @@ h3 {
 }
 
 #top .menu p {
-	font-family: RobotoLight;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
@@ -190,7 +188,6 @@ h3 {
 }
 
 #top .menu > ul > li > a {
-	font-family: RobotoLight;
 	padding: 0;
 	margin: 0;
 	display: block;
@@ -210,7 +207,6 @@ h3 {
 }
 
 #top .contacts a {
-	font-family: RobotoLight;
 	font-size: 30px;
 	color: white;
 }
