@@ -15,6 +15,9 @@
 	<script type="text/javascript" src="../js/slideshow/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/slideshow/comfort_slider.js"></script>
     <!-- SLIDESHOW END -->
+    <script dsync src="http://widget.bnovo.ru/js/bnovo.js"></script>
+ 	<script src="../js/bnovo/bnovo_form_hotels.js"></script>
+	<script src="../js/header_additional_menu.js"></script>
 </head>
 <body>
 
@@ -22,9 +25,15 @@
 		<div class="wrapper">
 			<div class="logo"><i class="main-header-logo"><a href="../index.html"><i class="img"></i></a></i>
 			</div>
-			<nav class="navigation">
+			<nav>
 				<ul class="nav-menu">
-					<li><a href="../apartments.html">Апартаменты</a></li>
+					<li id="li_apart" onmouseenter="showUl();" onmouseleave="hideUl()"><a href="../apartments.html">Апартаменты</a>
+						<ul id="ul_apart">
+							<li><a href="comfort.html">Комфорт</a></li>
+							<li><a href="lux.html">Люкс</a></li>
+							<li><a href="vip.html">VIP</a></li>
+						</ul>
+					</li>
 					<li><a href="">Контакты</a></li>
 					<li><a href="">О клубе Рашад</a></li>
 				</ul>
@@ -36,15 +45,15 @@
 		<section id="top">
 			<div class="wrapper">
 				<h1>Кофморт</h1>
-				<div class="bn_wrapper"><div id="_bn_widget_"></div>
-				</div>
+				<div class="bn_wrapper"><div id="_bn_widget_"></div></div>
 				<script src="http://widget.bnovo.ru/js/bnovo.js"></script>
 				<script src="../js/bnovo/bnovo_form_hotels.js"></script>
-				<div class="contacts">
-					<div class="wrap block1"><a href="tel:+79782108565"></a></div>
-					<div class="wrap block2"><a href="tel:+79782108565">+7 (978) 210 85 65</a><br><a href="tel:+74959732335">+7 (495) 973 23 35</a></div>
+				<div class="contacts_wrapper">
+					<div class="contacts">
+						<div class="wrap block1"><a href="tel:+79782108565"></a></div>
+						<div class="wrap block2"><a href="tel:+79782108565">+7 (978) 210 85 65</a><br><a href="tel:+74959732335">+7 (495) 973 23 35</a></div>
+					</div>
 				</div>
-				<a href="#comfort"><i class="fa fa-chevron-circle-down"></i></a>
 			</div>
 		</section>
 
@@ -56,7 +65,7 @@
 			<div class="block item1">
 				<div class="items_img"></div>
 				<h3>Медиа</h3>
-				<div class="block_separator"></div>
+				<div class="block_separator red"></div>
 				<ul>
 					<li>Плазменный телевизор 50″</li>
 					<li>Спутниковое ТВ 180 каналов</li>
@@ -67,7 +76,7 @@
 			<div class="block item2">
 				<div class="items_img"></div>
 				<h3>Интерьер</h3>
-				<div class="block_separator"></div>
+				<div class="block_separator blue"></div>
 				<ul>
 					<li>Кухня</li>
 					<li>Ванная комната</li>
@@ -81,7 +90,7 @@
 			<div class="block item3">
 				<div class="items_img"></div>
 				<h3>Услуги</h3>
-				<div class="block_separator"></div>
+				<div class="block_separator orange"></div>
 				<ul>
 					<li>Уборка номера</li>
 					<li>Приготовление пищи</li>
