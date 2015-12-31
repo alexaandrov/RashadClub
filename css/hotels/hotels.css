@@ -62,7 +62,7 @@ h3 {
 }
 
 .block_separator {
-	/*background-color: black;*/
+	background-color: black;
 	opacity: 0.2;
 	height: 4px;
 	width: 40%;
@@ -276,27 +276,6 @@ section {
 #top .contacts a:hover {
 	background-image: url(../../img/hotels/block_separator.png);
 	border-radius: 4px;
-}
-
-#top .move_by_id {
-	margin: 0 auto;
-	background-color: red;
-	max-width: 200px;
-	width: 100%;
-}
-
-#top .move_by_id > a {
-	margin: 0;
-	padding: 0;
-}
-
-#top i {
-	/*position: absolute;*/
-	color: white;
-	font-size: 80px;
-	bottom: -50px;
-	background-color: red;
-	text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.34);
 }
 
 #top .bn_wrapper {
