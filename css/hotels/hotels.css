@@ -327,7 +327,7 @@ section {
 	overflow: hidden;
 	display: inline-block;
 	margin: 50px 1%;
-	width: 30%;
+	width: 22%;
 	background-color: white;
 	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
@@ -349,16 +349,19 @@ section {
 	margin-top: 15px;
 }
 
-#comfort .item1 .items_img {
-	background-image: url(../../img/hotels/vip/comfort/tv.png);
+#comfort .media .items_img {
+	background-image: url(../../img/hotels/block_imgs/tv.png);
 }
 
-#comfort .item2 .items_img {
-	background-image: url(../../img/hotels/vip/comfort/interior.png);
+#comfort .interior .items_img {
+	background-image: url(../../img/hotels/block_imgs/interior.png);
 }
 
-#comfort .item3 .items_img {
-	background-image: url(../../img/hotels/vip/comfort/services.png);
+#comfort .services .items_img {
+	background-image: url(../../img/hotels/block_imgs/services.png);
+}
+#comfort .equimpent .items_img {
+	background-image: url(../../img/hotels/block_imgs/equimpent.png);
 }
 
 /* SLIDESHOW section*/
