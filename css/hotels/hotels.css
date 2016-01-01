@@ -618,7 +618,6 @@ section {
 
 	#top h1 {
 		font-size: 10vw;
-
 	}
 }
 
@@ -636,6 +635,11 @@ section {
 
 	#comfort .block > ul > li {
 		padding: 5px 0;
+	}
+
+	#slider .navigation li {
+		font-size: 58px;
+	}
 }
 
 
