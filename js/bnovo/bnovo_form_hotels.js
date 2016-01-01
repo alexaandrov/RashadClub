@@ -13,6 +13,12 @@ Bnovo_Widget.init(function(){
 	btn_background_over: "#353535",
 	btn_textcolor: "#FFFFFF",
 	btn_textover: "#FFFFFF",
-	nights_min: "3"
+	dates_preset: "on",
+	dfrom_custom: "on",
+	dfrom_tomorrow: "on",
+	dto_custom: "on",
+	dto_value: "3",
+	nights_min: "3",
+	ya_counter: "34508410",
 	});
 });

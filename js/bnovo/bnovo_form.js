@@ -23,20 +23,25 @@ function hideBnovo() {
 
 // Bnovo form
 Bnovo_Widget.init(function(){
-	 Bnovo_Widget.open('_bn_widget_', {
-			 type: "vertical",
-			 lcode: "1450710673",
-			 lang: "ru",
-			 width: "80%",
-			 background: "#555555",
-			 bg_alpha: "75",
-			 padding: "18",
-			 font_size: "12",
-			 btn_background: "#719E5B",
-			 btn_background_over: "#719E5B",
-			 btn_textcolor: "#FFFFFF",
-			 btn_textover: "#FFFFFF",
-			 nights_min: "3"
-
+	Bnovo_Widget.open('_bn_widget_', {
+		type: "vertical",
+		lcode: "1450710673",
+		lang: "ru",
+		width: "80%",
+		background: "#555555",
+		bg_alpha: "75",
+		padding: "18",
+		font_size: "12",
+		btn_background: "#719E5B",
+		btn_background_over: "#719E5B",
+		btn_textcolor: "#FFFFFF",
+		btn_textover: "#FFFFFF",
+		dates_preset: "on",
+		dfrom_custom: "on",
+		dfrom_tomorrow: "on",
+		dto_custom: "on",
+		dto_value: "3",
+		nights_min: "3",
+		ya_counter: "34508410",
 	});
 });
