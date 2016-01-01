@@ -481,6 +481,7 @@ section {
 @media (max-width: 850px) {
 	#comfort .block {
 		width: 45%;
+		margin-bottom: 0px;
 	}
 }
 

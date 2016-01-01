@@ -1,4 +1,4 @@
-window.onload = function () {
+function miniMenuInit () {
 	menuBtn = $('.mini_menu_btn')[0];
 	menuBtn2 = $('.mini_menu_btn')[1];
 	mainMiniMenu = $('.header_mini_menu')[0];

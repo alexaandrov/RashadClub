@@ -84,10 +84,11 @@ var slider = {
         }
     }
 };
-window.onload = function() { // запуск слайдера после загрузки документа
+
+function sliderInit() {
     var durationSlide = 9000;
     slider.init();
-    setInterval(function() { // ставим пятисекундный интервал для перелистывания картинок
+    setInterval(function() { // интервал для перелистывания картинок
         slider.right();
     }, durationSlide);
 };
