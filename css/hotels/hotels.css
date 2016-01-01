@@ -521,7 +521,7 @@ section {
 		margin-bottom: 0px;
 	}
 }
-
+/* MOBILE VIEW */
 @media screen and (max-width: 780px) {
 	.header .wrapper {
 		position: fixed;
@@ -614,14 +614,49 @@ section {
 		width: 32px;
 		margin: 0 auto;
 		background-size: 100% 100%;
+		z-index: 9999999999;
+	}
+
+	#top {
+		height: 500px;
 	}
 
 	#top h1 {
+		padding-top: 70px;
 		font-size: 10vw;
 	}
+
+
+	#slider .left {
+		position: absolute;
+		width: 70px;
+		left: 20px;
+		top: 0px;
+		padding: 250px 5%;
+		padding-right: 45%; 
+	}
+
+	#slider .right {
+		position: absolute;
+		width: 70px;
+		right: 20px;
+		top: 0px;
+		padding: 250px 5%;
+		padding-left: 25%;
+	}
+
 }
 
 @media (max-width: 500px) {
+	.header_separator {
+		/*margin-top: 10px; */
+		display: none;
+	}
+
+	h2 {
+		margin-top: 20px;
+	}
+
 	#comfort .block {
 		width: 100%;
 		margin: 0;
@@ -640,12 +675,46 @@ section {
 	#slider .navigation li {
 		font-size: 58px;
 	}
+
+	#slider .left {
+		position: absolute;
+		width: 70px;
+		left: 20px;
+		top: 0px;
+		padding: 250px 5%;
+	}
+
+	#slider .right {
+		position: absolute;
+		width: 70px;
+		right: 20px;
+		top: 0px;
+		padding: 250px 5%;
+	}
 }
 
 
 @media (max-width: 350px) {
+	#top {
+		height: 450px;
+	}
 	#top .contacts a {
 		padding-left: 10px;
+	}
+	#slider .left {
+		position: absolute;
+		width: 70px;
+		left: 0px;
+		top: 0px;
+		padding: 250px 5%;
+	}
+
+	#slider .right {
+		position: absolute;
+		width: 70px;
+		right: 0px;
+		top: 0px;
+		padding: 250px 5%;
 	}
 }
 
