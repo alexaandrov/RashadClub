@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: RobotoLight, Arial;
-	/*min-width: 850px;*/
+	min-width: 300px;
 	/*min-height: 500px;*/
 	background: #f2f2f2;
 }
@@ -270,22 +270,23 @@ section {
 }
 
 #top .contacts {
-	margin-top: 15px;
+	margin-top: 20px;
 	height: 10%;
 	text-align: center;
 	position: absolute;
-	bottom: 100px;
+	bottom: 80px;
 }
 
 #top .contacts a {
 	font-family: RobotoLight;
 	font-size: 30px;
 	color: white;
+	text-align: center;
 }
 
 #top .wrap {
 	margin: 0 auto;
-	max-width: 400px;
+	max-width: 300px;
 	display: inline-block;
 }
 
@@ -328,6 +329,7 @@ section {
 	margin: 50px 1%;
 	width: 22%;
 	background-color: white;
+	vertical-align: top;
 	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
@@ -456,16 +458,6 @@ section {
 
 /* Mobile view */
 @media (max-width: 950px) {
-	#comfort .block h3 {
-		font-size: 20px;
-	}
-
-	#comfort .block > ul > li {
-		font-size: 15px;
-	}
-}
-
-@media (max-width: 890px) {
 	.header .logo .img {
 		width: 160px;
 		height: 60px;
@@ -476,21 +468,23 @@ section {
 		font-size: 18px;
 
 	}
+
+	#comfort .block h3 {
+		font-size: 20px;
+	}
+
+	#comfort .block > ul > li {
+		font-size: 15px;
+	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
 	#comfort .block {
 		width: 45%;
 	}
 }
 
-@media screen and (max-width: 580px) {
-	#comfort .block {
-		width: 100%;
-		margin: 0;
-		margin-top: 20px;
-	}
-
+@media screen and (max-width: 780px) {
 	.header .wrapper {
 		position: fixed;
 		z-index: 99999;
@@ -585,13 +579,37 @@ section {
 	}
 
 	#top h1 {
-		font-size: 80px;
+		font-size: 10vw;
+
 	}
 }
 
+@media (max-width: 500px) {
+	#comfort .block {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	#comfort .block > ul {
+		margin-left: 40px;
+	}
+
+	#comfort .block > ul > li {
+		padding: 5px 0;
+}
+
+
 @media (max-width: 350px) {
 	#top .contacts a {
-		font-size: 28px;
+		padding-left: 10px;
+	}
+}
+
+@media (max-width: 300px) {
+	#top h1 {
+		font-size: 25px;
 	}
 }
 /* End mobile view */
