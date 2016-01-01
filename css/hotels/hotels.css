@@ -536,8 +536,12 @@ section {
 		float: left;
 	}
 
+	.header_mini_menu .rashad_logo_text > a {
+		font-size: 35px;
+		font-weight: 400;
+	}
+
 	.header_mini_menu .rashad_logo_text {
-		font-size: 21px;
 		display: block;
 	}
 

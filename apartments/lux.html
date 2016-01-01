@@ -24,11 +24,15 @@
 	<!-- Выплывающие меню для хедера > апартаменты -->
 	<script src="../js/header_additional_menu.js"></script>
 	<!-- / -->
+	<!-- Мини меню -->
+	<script src="../js/mini_menu.js"></script>
+	<!-- / -->
 </head>
 <body>
 
 	<header class="header">
 		<div class="wrapper">
+			<div class="mini-menu"><div class="mini_menu_btn" onclick="menuCheckOpenClose();"></div></div>
 			<div class="logo"><i class="main-header-logo"><a href="../index.html"><i class="img"></i></a></i>
 			</div>
 			<nav>
@@ -45,6 +49,15 @@
 				</ul>
 			</nav>
 		</div>
+		<nav class="header_mini_menu">
+			<ul>
+				<li><a onclick="menuCheckOpenClose();"><div class="mini_menu_btn"></div></a></li>
+				<li class="rashad_logo_text"><a href="../index.html"><i></i>Rashad</a></li>
+				<li><a href="comfort.html">Комфорт</a></li>
+				<li><a href="lux.html">Люкс</a></li>
+				<li><a href="vip.html">VIP</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<div class="main">
