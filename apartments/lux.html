@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-	<title>Люкс апартаменты-студио Крыма, Севастополяю. +7 (978) 210 85 65</title>
+	<title>Люкс, дизайнерские апартаменты-студио Крыма, Севастополяю. +7 (978) 210 85 65</title>
 	<meta charset="UTF-8">
 	<!-- Стили страницы -->
 	<link rel="stylesheet" href="../css/hotels/hotels.css">
@@ -11,8 +11,6 @@
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<!-- SLIDESHOW -->
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/slideshow/lux_slider.js"></script>
@@ -196,17 +194,17 @@
 			<!-- Слайдер -->
 			<div id="slider">
 				<!-- Все изображения в скрипте -->
-				<i class="buttons left fa fa-chevron-left" onclick="slider.left();"></i>
+				<img class="buttons left" src="../img/icons/left_arrow.png" alt="<--" onclick="slider.left();"></i>
+				<img class="buttons right" src="../img/icons/right_arrow.png" alt="-->" onclick="slider.right();"></i>
 				<div id="scr"></div>
-				<ul class="navigation">
-					<li class="nav" id="n0"><i class="fa fa-circle" onclick="slider.navigation(0)"></i></li>
-					<li id="n1"><i class="fa fa-circle" onclick="slider.navigation(1)"></i></li>
-					<li id="n2"><i class="fa fa-circle" onclick="slider.navigation(2)"></i></li>
-					<li id="n3"><i class="fa fa-circle" onclick="slider.navigation(3)"></i></li>
-					<li id="n4"><i class="fa fa-circle" onclick="slider.navigation(4)"></i></li>
-					<li id="n5"><i class="fa fa-circle" onclick="slider.navigation(5)"></i></li>
+				<ul class="nav_wrapper navigation">
+					<li class="nav" id="n0"><div class="circle" onclick="slider.navigation(0)">•</div></li>
+					<li class="nav" id="n1"><div class="circle" onclick="slider.navigation(1)">•</div></li>
+					<li class="nav" id="n2"><div class="circle" onclick="slider.navigation(2)">•</div></li>
+					<li class="nav" id="n3"><div class="circle" onclick="slider.navigation(3)">•</div></li>
+					<li class="nav" id="n4"><div class="circle" onclick="slider.navigation(4)">•</div></li>
+					<li class="nav" id="n5"><div class="circle" onclick="slider.navigation(5)">•</div></li>
 				</ul>
-				<i class="buttons right fa fa-chevron-right" onclick="slider.right();"></i>
 			</div>
 			<!-- Конец слайдера -->
 		</section>

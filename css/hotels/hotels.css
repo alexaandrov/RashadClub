@@ -3,7 +3,6 @@ body {
 	padding: 0;
 	font-family: RobotoLight, Arial;
 	min-width: 300px;
-	/*min-height: 500px;*/
 	background: #f2f2f2;
 }
 
@@ -16,6 +15,38 @@ body {
     url("../../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+}
+
+/* font-family: "Poiret One"; */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../../fonts/PoiretOne/PoiretOne-Regular.ttf) format("truetype");
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../../fonts/PoiretOne/PoiretOne-Regular-Cyr.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../../fonts/PoiretOne/PoiretOne-Regular-lat-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../../fonts/PoiretOne/PoiretOne-Regular-lat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 a {
@@ -91,7 +122,6 @@ h3 {
 }
 
 .header .wrapper {
-	/*min-width: 850px;*/
 	width: 100%;
 	display: block;
 	max-width: 1280px;
@@ -152,7 +182,7 @@ h3 {
 	margin:  0;
 	font-weight: bold;
 	font-size: 20px;
-	font-family: RobotoLight;
+	font-family: 'Poiret One', RobotoLight, Arial;
 	-moz-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
 	-webkit-transition: all 0.4s ease-out;
@@ -209,7 +239,6 @@ h3 {
 }
 
 #li_apart > ul > li {
-	/*background-color: #8E8E8E;*/
 	font-family: RobotoLight, Arial;
 	list-style-type: none;
 	margin-left: -30px;
@@ -241,7 +270,6 @@ section {
 /* TOP Section*/
 #top {
 	position: relative;
-	/*background-size: 100% 100%;*/
 	background-attachment: fixed;
 	height: 650px;
 	text-align: center;
@@ -399,28 +427,26 @@ section {
 	float: left;
 	ont-size: 80px;
 	cursor: pointer;
-	opacity: 0.7;
+	opacity: 0.5;
 	outline: none;
 	font-size: 70px;
-	color: black;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	-webkit-transition: all 0.2s ease-out;
 }
 
 #slider .buttons:hover {
-	opacity: 0.8;
-	color: white;
+	opacity: 0.7;
 }
 
 #slider .buttons:active {
 	opacity: 1;
-	color: black;
 }
 
 #slider .left {
 	position: absolute;
-	left: 30px;
+	width: 70px;
+	left: 50px;
 	top: 0px;
 	padding: 250px 0px;
 	padding-right: 52%;
@@ -428,18 +454,26 @@ section {
 
 #slider .right {
 	position: absolute;
+	width: 70px;
 	right: 50px;
 	top: 0px;
 	padding: 250px 0px;
 	padding-left: 47%;
+	z-index: 99999999;
 }
 
 #slider .navigation {
-	margin-top: -50px;
+	margin-top: -80px;
 	padding-right: 50px;
 	display: block;
 	text-align: center;
 	cursor: default;
+	position: absolute;
+
+}
+
+#slider .nav_wrapper {
+	position: relative;
 }
 
 #slider .navigation li {
@@ -450,6 +484,9 @@ section {
 	color: black;
 	cursor: pointer;
 	opacity: 0.5;
+	font-size: 70px;
+	font-family: Arial;
+	letter-spacing: -5px;
 	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
