@@ -2,8 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: RobotoLight, Arial;
-	min-width: 850px;
-	min-height: 500px;
+	/*min-width: 850px;*/
+	/*min-height: 500px;*/
 	background: #f2f2f2;
 }
 
@@ -91,7 +91,7 @@ h3 {
 }
 
 .header .wrapper {
-	min-width: 850px;
+	/*min-width: 850px;*/
 	width: 100%;
 	display: block;
 	max-width: 1280px;
@@ -108,6 +108,7 @@ h3 {
 	width: 350px;
 	height: 85px;
 	margin: 20px 0px;
+	margin-left: 30px;
 	background-image: url(../../img/header/rashad.png);
 	background-size: 100% 75px;
 	background-repeat: no-repeat;
@@ -173,6 +174,25 @@ h3 {
 	-webkit-transition: all 0.01s ease-out;
 }
 
+.header .mini_menu_btn {
+	width: 48px;
+	height: 48px;
+	background-image: url(../../img/icons/menu.png);
+	background-size: 100% 100%;
+	float: right;
+	margin-right: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+.header .mini_menu_btn:active {
+	background-image: url(../../img/icons/menu-active.png);
+}
+
+.header_mini_menu {
+	display: none;
+}
 
 #li_apart:hover {
 	background-image: url(../../img/hotels/contacts.png);
@@ -433,3 +453,113 @@ section {
 	-webkit-transition: all 0.3s ease-out;
 }
 /* SLIDESHOW end */
+
+/* Mobile view */
+@media (max-width: 890px) {
+	.header .logo .img {
+		width: 160px;
+		height: 60px;
+		background-size: 100% 60px;
+	}
+
+	.header .nav-menu > li > a {
+		font-size: 18px;
+
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.header .wrapper {
+		position: fixed;
+		z-index: 99999;
+	}
+	
+	.header .logo {
+		display: none;
+	}
+
+	.header .nav-menu {
+		display: none;
+	}
+
+	.header .mini_menu_btn {
+		display: block;
+	}
+
+	.header_mini_menu {
+		display: block;
+		width: 200px;
+		background-color: #3C3C3C;
+		height: 100%;
+		position: fixed;
+		right: -250px;
+		z-index: 999999;
+		/*margin-top: 50px;*/
+		margin-left: -150px;
+		border-radius: 3px;
+		z-index: 9999999999;
+		-moz-transition: all 0.4s ease-out;
+		-o-transition: all 0.4s ease-out;
+		-webkit-transition: all 0.4s ease-out;
+	}
+	
+
+	.header_mini_menu .rashad_logo_text i {
+		background-image: url(../../img/icons/hotel_logo.png);
+		display: block;
+		background-size: 100% 100%;
+		height: 42px;
+		width: 34px;
+		margin: 0 5px;
+		float: left;
+	}
+
+	.header_mini_menu .rashad_logo_text {
+		font-size: 21px;
+		display: block;
+	}
+
+	.header_mini_menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.header_mini_menu ul > li {
+		margin: 20px 0px;
+		padding: 0;
+	}
+
+	.header_mini_menu ul > li > a {
+		font-family: 'Poiret One', RobotoLight, Arial;
+		color: white;
+		font-size: 1.7em;
+		padding: 10px 15px;
+		display: block;
+		cursor: pointer;
+	}
+	
+	.header_mini_menu ul > li > a:hover {
+		background: #8C8C8C;
+		font-weight: bold;
+	}
+	
+	.header_mini_menu .btn_wrapper {
+		width: 100%;
+		display: inline-block;
+		cursor: pointer;
+		background: red;
+	}
+
+	.header_mini_menu .btn_wrapper.mini_menu_btn {
+		height: 32px;
+		width: 32px;
+		margin: 0 auto;
+		background-size: 100% 100%;
+	}
+
+	#top h1 {
+		font-size: 80px;
+	}
+}
+/* End mobile view */

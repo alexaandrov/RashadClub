@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="../css/hotels/vip.css">
 	<!-- / -->
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-	<!-- <meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> -->
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<!-- SLIDESHOW -->
@@ -24,11 +24,15 @@
 	<!-- Выплывающие меню для хедера > апартаменты -->
 	<script src="../js/header_additional_menu.js"></script>
 	<!-- / -->
+	<!-- Мини меню -->
+	<script src="../js/mini_menu.js"></script>
+	<!-- / -->
 </head>
 <body>
 
 	<header class="header">
 		<div class="wrapper">
+			<div class="mini-menu"><div class="mini_menu_btn" onclick="menuCheckOpenClose();"></div></div>
 			<div class="logo"><i class="main-header-logo"><a href="../index.html"><i class="img"></i></a></i>
 			</div>
 			<nav>
@@ -45,14 +49,24 @@
 				</ul>
 			</nav>
 		</div>
+		<nav class="header_mini_menu">
+			<ul>
+				<li><a onclick="menuCheckOpenClose();"><div class="mini_menu_btn"></div></a></li>
+				<li class="rashad_logo_text"><a href="../index.html"><i></i>Rashad</a></li>
+				<li><a href="comfort.html">Комфорт</a></li>
+				<li><a href="lux.html">Люкс</a></li>
+				<li><a href="vip.html">VIP</a></li>
+			</ul>
+		</nav>
 	</header>
+
 
 	<div class="main">
 		<!-- Верхняя секция -->
 		<section id="top">
 			<div class="wrapper">
 				<!-- Заголовок секции -->
-				<h1>Дизайнерский</h1>
+				<h1>ВИП</h1>
 				<!-- Bnovo widget -->
 				<div class="bn_wrapper"><div id="_bn_widget_"></div></div>
 				<script src="http://widget.bnovo.ru/js/bnovo.js"></script>
