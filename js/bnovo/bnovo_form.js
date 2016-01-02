@@ -1,7 +1,7 @@
 // Show and hiden Bnovo form, and show and hide the button
 function showBnovo() {
 	var bnovo = document.getElementById('bn_wrapper');
-	var btn = $('.button')[0];
+	var btn = $('.bn_btn')[0];
 	bnovo.style.cssText="display: block;"
 	function show() {
 		bnovo.style.cssText="top: 20px;"
@@ -12,7 +12,7 @@ function showBnovo() {
 
 function hideBnovo() {
 	var bnovo = document.getElementById('bn_wrapper');
-	var btn = $('.button')[0];
+	var btn = $('.bn_btn')[0];
 	bnovo.style.cssText="top: -180px;"
 	btn.style.cssText="display: block;"
 	function hide() {
@@ -32,8 +32,8 @@ Bnovo_Widget.init(function(){
 		bg_alpha: "75",
 		padding: "18",
 		font_size: "12",
-		btn_background: "#719E5B",
-		btn_background_over: "#719E5B",
+		btn_background: "#c73838",
+		btn_background_over: "#c73838",
 		btn_textcolor: "#FFFFFF",
 		btn_textover: "#FFFFFF",
 		dates_preset: "on",

@@ -54,7 +54,7 @@ h3 {
 	height: 20%;
 }
 
-#top .btn_cross {
+#top .bnovo .btn_cross {
 	float: right;
 	position: absolute;
 	right: -28px;
@@ -79,7 +79,7 @@ h3 {
 	background-image: url(../img/icons/cross.png);
 }
 
-#top .button {
+#top .bn_btn {
 	overflow: hidden;
 	margin: 10px auto;
 	border: 1px solid white;
@@ -96,13 +96,13 @@ h3 {
 	color: white;
 }
 
-#top .button:hover {
-	background-color: #719E5B;
-	border: 1px solid #719E5B;
+#top .bn_btn:hover {
+	background-color: #c73838;
+	border: 1px solid #c73838;
 	color: white;
 }
 
-#top .button:active {
+#top .bn_btn:active {
 	-moz-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
 	-webkit-transition: all 0.1s ease;
@@ -124,47 +124,51 @@ h3 {
 
 #top .menu {
 	margin: 0 auto;
-	padding-top: 8%;
+	padding-top: 0%;
 	height: 50%;
-	max-width: 500px;
+	max-width: 700px;
 	width: 100%:;
 }
 
 #top .rashad-logo {
-	background-image: url(../img/top/rashad-club.png);
+	margin: 0 auto;
+	background-image: url(../img/top/rashad-logo.png);
 	background-size: 100% 100%;
-	height: 40%;
+	height: 70%;
 	width: 100%;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-webkit-transition: all 1s ease;
+	margin-top: 30px;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
 	cursor: pointer;
+	opacity: 0.9;
 }
 
 #top .rashad-logo:hover {
-	background-image: url(../img/top/rashad-club-active.png);
-	height: 55%;
+	opacity: 1;
 }
 
-#top .menu p {
+#top .rashad-logo:active {
+	background-image: url(../img/top/rashad-logo-active.png);
+	-moz-transition: all 0s ease;
+	-o-transition: all 0s ease;
+	-webkit-transition: all 0s ease;
+}
+
+#top .menu .p {
+	margin: 0 auto;
+	display: block;	
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
-	padding: 0;
-	margin: 0;
-
-}
-
-#top .menu p a {
-	color: white;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
 }
 
-#top .menu p a:hover {
-	color: black;
+#top .menu .p:hover {
+	color: #c73838;
 }
 
 #top .menu > ul {
@@ -178,27 +182,27 @@ h3 {
 	display: inline-block;
 	list-style-type: none;
 	padding: 0;
-	background-color: #3b3b3b;
+	border: 1px solid white;
 	border-radius: 2px;
 	cursor: pointer;
-	-moz-transition: all 0.8s ease-out;
-	-o-transition: all 0.8s ease-out;
-	-webkit-transition: all 0.8s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
 }
 
 #top .menu > ul > li:hover {
-	border: 0;
-	background-color: white;
-	color: black;
+	border-color: #c73838;
+	background-color: #c73838;
+	color: white;
 }
 
 #top .menu > ul > li:active {
 	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0s ease-out;
+	-o-transition: all 0s ease-out;
+	-webkit-transition: all 0s ease-out;
 }
 
 #top .menu > ul > li > a {
@@ -207,22 +211,31 @@ h3 {
 	display: block;
 	color: white;
 	font-size: 18px;
-	color: white;
 	padding: 8px 20px;
 }
 
 #top .menu > ul > li > a:hover {
-	color: black;
+	color: white;
+}
+
+#top .ctn_wrap {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 300px;
+	background: red;
+	position: relative;
+	background: red;
 }
 
 #top .contacts {
-	height: 10%;
+	padding-top: 100px;
 	text-align: center;
 }
 
 #top .contacts a {
 	font-size: 30px;
 	color: white;
+	font-weight: bold;
 }
 
 #top .wrap {
@@ -236,10 +249,11 @@ h3 {
 }
 
 #top .contacts a:hover {
-	color: #6495ed;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	-webkit-transition: all 0.5s ease-out;
+	color: #c73838;
+	font-weight: bold;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
 }
 
 #top .phone {
@@ -248,28 +262,44 @@ h3 {
 	height: 82px;
 	background-image: url(../img/icons/phone.png);
 	background-size: 100% 100%;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	-webkit-transition: all 0.5s ease-out;
 }
 
 @media (max-width: 800px) {
 	#top {
 		background-image: url(../img/main_mob.jpg);
 	}
-
 	#top .rashad-logo {
-		background-image: url(../img/top/rashad-club-mob.png);
+		width: 90%;
+		height: 60%;
+		margin: 0 auto;
+		opacity: 1;
 	}
-
-	#top .rashad-logo:hover {
-		background-image: url(../img/top/rashad-club-active-mob.png);
-	}
+	#top .rashad-logo:hover {}
 }
 
 /* MEDIA */
 @media (max-width: 450px) {
+	#top .menu .rashad-logo {
+		/*margin-top: 120px;*/
+	}
+	#top .menu > .p  {
+		border: 1px solid #3b3b3b;
+		background-color: #3b3b3b;
+		color: white;
+		cursor: pointer;
+		display: block;
+		text-align: center;
+		margin: 0 5px;
+		padding: 15px 0;
+		font-size: 13px;
+	}
+	#top .menu > .p:hover  {
+		border-color: #c73838;
+		background-color: #c73838;
+	}
 	#top .menu > ul > li {
+		background-color: #3b3b3b;
+		border-color: #3b3b3b;
 		display: block;
 		margin: 5px;
 	}
@@ -284,7 +314,7 @@ h3 {
 		padding-top: 10px;
 	}
 	#top .rashad-logo {
-		background-image: url(../img/top/rashad-club-active-mob.png);
+		background-image: url(../img/top/rashad-logo-mob.png);
 		height: 35%;
 		width: 80%;
 		margin: 0 auto;
@@ -292,13 +322,15 @@ h3 {
 	#top .rashad-logo:hover {
 		height: 35%;
 	}
+	#top .rashad-logo:active {
+	}
 	#top .button {
 		font-size: 15px;
 		padding: 15px;
 		width: 150px;
 	}
 	#top .contacts {
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 	#top .contacts a {
 		font-size: 20px;
@@ -308,3 +340,4 @@ h3 {
 		height: 50px;
 	}
 }
+
