@@ -25,6 +25,7 @@ function hideBnovo() {
 Bnovo_Widget.init(function(){
 	Bnovo_Widget.open('_bn_widget_', {
 		type: "vertical",
+		layout: "residencemoika",
 		lcode: "1450710673",
 		lang: "ru",
 		width: "80%",
