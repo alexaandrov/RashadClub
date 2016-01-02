@@ -1,3 +1,10 @@
 #top {
-	background-image: url(../../img/hotels/comfort/main.jpg);
+	background-image: url(../../img/hotels/comfort/comfort.jpg);
+}
+
+@media screen and (max-width: 780px) {
+	#top {
+		background-image: url(../../img/hotels/comfort/comfort_mob.jpg);
+		/*background-position: bottom;*/
+	}
 }

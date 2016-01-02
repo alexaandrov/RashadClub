@@ -235,15 +235,15 @@ h3 {
 }
 
 .tps-section:nth-child(1n+1) .tps-wrapper {
-	background: url(../img/hotels/comfort/main.jpg) center center;
+	background: url(../img/hotels/comfort/comfort.jpg) center center;
 	background-size: cover;
 }
 .tps-section:nth-child(2n+1) .tps-wrapper {
-	background:  url(../img/hotels/lux/main.jpg) center center;
+	background:  url(../img/hotels/lux/lux.jpg) center center;
 	background-size: cover;
 }
 .tps-section:nth-child(3n+1) .tps-wrapper {
-	background:  url(../img/hotels/vip/main.jpg) center center;
+	background:  url(../img/hotels/vip/vip.jpg) center center;
 	background-size: cover;
 }
 .tps-section:nth-child(4n+1) .tps-wrapper {

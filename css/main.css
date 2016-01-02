@@ -82,7 +82,7 @@ h3 {
 #top .button {
 	overflow: hidden;
 	margin: 10px auto;
-	border: 1px solid #719E5B;
+	border: 1px solid white;
 	padding: 15px;
 	width: 300px;
 	text-align: center;
@@ -93,10 +93,12 @@ h3 {
 	-o-transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
 	border-radius: 3px;
+	color: white;
 }
 
 #top .button:hover {
 	background-color: #719E5B;
+	border: 1px solid #719E5B;
 	color: white;
 }
 
@@ -251,6 +253,20 @@ h3 {
 	-webkit-transition: all 0.5s ease-out;
 }
 
+@media (max-width: 800px) {
+	#top {
+		background-image: url(../img/main_mob.jpg);
+	}
+
+	#top .rashad-logo {
+		background-image: url(../img/top/rashad-club-mob.png);
+	}
+
+	#top .rashad-logo:hover {
+		background-image: url(../img/top/rashad-club-active-mob.png);
+	}
+}
+
 /* MEDIA */
 @media (max-width: 450px) {
 	#top .menu > ul > li {
@@ -268,7 +284,7 @@ h3 {
 		padding-top: 10px;
 	}
 	#top .rashad-logo {
-		background-image: url(../img/top/rashad-club-active.png);
+		background-image: url(../img/top/rashad-club-active-mob.png);
 		height: 35%;
 		width: 80%;
 		margin: 0 auto;

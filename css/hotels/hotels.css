@@ -225,7 +225,7 @@ h3 {
 }
 
 #li_apart:hover {
-	background-image: url(../../img/hotels/contacts.png);
+	background-image: url(../../img/hotels/li_apart_bg.png);
 	color: black;
 	border-radius: 4px;
 	-webkit-box-shadow: 50px 50px 50px 0px rgba(0,0,0,0.75);
@@ -339,7 +339,10 @@ section {
 	font-family: RobotoLight;
 	font-size: 30px;
 	color: white;
+	font-weight: bold;
 	text-align: center;
+	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.55);
+	border-radius: 5px;
 }
 
 #top .wrap {
