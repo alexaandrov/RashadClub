@@ -1,9 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	min-width: 250px;
+	/*min-width: 850px;*/
 	min-height: 500px;
 	font-family: RobotoLight, Arial;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -31,21 +32,49 @@ h3 {
     font-weight: normal;
 }
 
+/* font-family: "Poiret One"; */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular.ttf) format("truetype");
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular-Cyr.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular-lat-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular-lat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 #top {
 	min-height: 500px;
 	min-width: 250px;
-	background-image: url(../img/main.jpg);
+	background-image: url(../img/hotels/vip/slideshow/5.jpg);
+	/*background-size: 100% 100%;*/
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
-	background-size: 100% 100%;
 	margin: 0 auto;
-    position: absolute;
 	z-index: 1;
     width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    height: 700px;
 	padding: 0;
 	overflow: hidden;
 }
@@ -122,6 +151,14 @@ h3 {
 	-webkit-transition: all 0.5s ease-out;
 }
 
+#top .stars {
+	padding-top: 100px;
+	font-size: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.55);
+}
+
 #top .menu {
 	margin: 0 auto;
 	padding-top: 0%;
@@ -134,41 +171,42 @@ h3 {
 	margin: 0 auto;
 	background-image: url(../img/top/rashad-logo.png);
 	background-size: 100% 100%;
-	height: 70%;
-	width: 100%;
+	height: 60%;
+	width: 80%;
 	margin-top: 30px;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
 	cursor: pointer;
-	opacity: 0.9;
 }
 
 #top .rashad-logo:hover {
-	opacity: 1;
+	opacity: 0.9;
 }
 
 #top .rashad-logo:active {
-	background-image: url(../img/top/rashad-logo-active.png);
-	-moz-transition: all 0s ease;
-	-o-transition: all 0s ease;
-	-webkit-transition: all 0s ease;
+	width: 75%;
+	height: 55%;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	-webkit-transition: all 0.1s ease;
 }
 
 #top .menu .p {
 	margin: 0 auto;
-	display: block;	
 	color: white;
+	display: block;	
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55);
 }
 
 #top .menu .p:hover {
-	color: #c73838;
+	color: #FFDEDE;
 }
 
 #top .menu > ul {
@@ -182,7 +220,9 @@ h3 {
 	display: inline-block;
 	list-style-type: none;
 	padding: 0;
-	border: 1px solid white;
+	/*474747*/
+	border: 1px solid #414141;
+	background-color: #414141;
 	border-radius: 2px;
 	cursor: pointer;
 	-moz-transition: all 0.3s ease-out;
@@ -228,14 +268,17 @@ h3 {
 }
 
 #top .contacts {
-	padding-top: 100px;
-	text-align: center;
+	padding-bottom: 0px;
+	margin-right: 50px;
+	position: absolute;
+	right: 0px;
+	top: 20px;
 }
 
 #top .contacts a {
 	font-size: 30px;
 	color: white;
-	font-weight: bold;
+
 }
 
 #top .wrap {
@@ -249,7 +292,7 @@ h3 {
 }
 
 #top .contacts a:hover {
-	color: #c73838;
+	color: #F11717;
 	font-weight: bold;
 	-moz-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
@@ -269,18 +312,16 @@ h3 {
 		background-image: url(../img/main_mob.jpg);
 	}
 	#top .rashad-logo {
-		width: 90%;
-		height: 60%;
+		/*width: 90%;*/
+		/*height: 60%;*/
 		margin: 0 auto;
 		opacity: 1;
 	}
 	#top .rashad-logo:hover {}
 }
 
-/* MEDIA */
 @media (max-width: 450px) {
 	#top .menu .rashad-logo {
-		/*margin-top: 120px;*/
 	}
 	#top .menu > .p  {
 		border: 1px solid #3b3b3b;
@@ -341,3 +382,248 @@ h3 {
 	}
 }
 
+section {
+	min-width: 850px;
+	margin: 0;
+	padding: 0;
+}
+
+#about-us {
+	overflow: hidden;
+	width: 100%;
+	margin: 70px 0;
+}
+
+#about-us .wrapper {
+	margin: 0 auto;
+	max-width: 900px;
+	width: 100%;
+	color: black;
+}
+
+#about-us h3 {
+	text-align: center;
+	margin: 0;
+}
+
+#about-us p {
+	font-size: 20px;
+	text-align: center;
+}
+
+#about-us .wrapper .separator.one {
+	margin-top: 20px;
+	width: 120px;
+	height: 2px;
+}
+
+#about-us .wrapper .separator.two {
+	margin-bottom: 20px;
+	width: 120px;
+	height: 2px;
+}
+.separator {
+	margin: 0 auto;
+	background-color: blue;
+	opacity: 0.3;
+	width: 20%;
+	height: 3px;
+}
+
+#rashad {
+	width: 100%;
+	overflow: hidden;
+	background: #faf6f5;
+}
+
+#rashad .wrapper {
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+#rashad .photo {
+	width: 35%;
+	float: left;
+	background-image: url(../img/top/rashad.jpg);
+	background-position: center;
+	background-size: 100% 100%;
+	height: 600px;
+}
+
+/* RASHAD TEXT */
+#rashad .text {
+	float: left;
+	width: 65%;
+}
+
+#rashad .text h3 {
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+#rashad .text p {
+	font-size: 16px;
+	margin: 5px 50px;
+}
+
+#rashad .text .sell {
+	font-size: 20px;
+	margin: 50px 50px;
+	margin-top: 40px;
+	margin-left: 80px;
+	padding-left: 20px;
+	border-left: 3px solid #B3C0FF;
+}
+
+#apartments {
+	overflow: hidden;
+	width: 100%;
+}
+
+#apartments .wrapper {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+}
+
+#apartments h2 {
+	text-align: center;
+
+}
+
+#apartments .apartments_list {
+	height: 100%;
+}
+
+#apartments .apartments {
+	float: left;
+	height: 500px;
+	margin: 0 0.5%;
+	text-align: center;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#apartments .apartments:hover {
+	background-color: #EDEDED;
+}
+
+#apartments .apartments.comfort {
+	width: 30%;
+}
+#apartments .apartments.vip {
+	width: 35%;
+}
+#apartments .apartments.lux {
+	width: 30%;
+}
+
+#apartments .apartments .apart_img {
+	width: 100%;
+	height: 70%;
+	border-radius: 2px; 
+}
+
+#apartments .apartments .apart_img:hover{
+	opacity: 0.8;
+}
+
+#apartments .apartments.comfort .apart_img {
+	background-image: url(../img/hotels/comfort/comfort_mob.jpg);
+	background-position: left;
+	width: 100%;
+}
+#apartments .apartments.vip .apart_img {
+	background-image: url(../img/hotels/vip/vip_mob.jpg);
+	background-position: right;
+	width: 100%;
+}
+#apartments .apartments.lux .apart_img {
+	background-image: url(../img/hotels/lux/lux_mob.jpg);
+	background-position: left;
+	width: 100%;
+}
+
+#apartments .apartments .apart_info .name {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+#apartments .apartments .apart_info .about {
+	margin: 5px 5px;
+	padding: 0;
+	color: #868686;
+	margin-bottom: 10px; 
+}
+
+#apartments .apartments .separator {
+	margin: 0 auto;
+	background-color: red;
+	opacity: 0.3;
+	width: 50%;
+	height: 3px;
+}
+
+#apartments .apartments .price_info {
+	margin: 5px 10px;
+	padding: 0;
+}
+
+#apartments .apartments .price_info > li {
+	list-style-type: none;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+
+#apartments .apartments .price_info .apart_price {
+	font-size: 25px;
+	font-weight: bold
+}
+
+#map {
+	height: 400px;
+}
+
+.footer {
+	overflow: hidden;
+	height: 100%;
+	background-color: #333333;
+	color: #ECECEC;
+	font-family: 'Poiret One';
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer .stars {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.footer .rashad {
+	margin: 0 auto;
+	background-image: url(../img/header/rashad-active.png);
+	background-size: 100% 100%;
+	width: 180px;
+	height: 59px;
+}
+
+.footer .phones {
+	font-size: 30px;
+}
+
+.footer .phones > a {
+	color: white;
+}
+
+.footer .copyright {
+	font-size: 14px;
+	margin-bottom: 80px;
+}
