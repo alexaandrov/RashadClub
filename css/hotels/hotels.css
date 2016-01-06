@@ -490,7 +490,6 @@ section {
 }
 
 /* SLIDESHOW section*/
-
 #slideshow_mob {
 	display: none;
 }
@@ -791,6 +790,7 @@ section {
 		margin-bottom: 0px;
 	}
 }
+
 /* MOBILE VIEW */
 @media screen and (max-width: 780px) {
 
@@ -844,7 +844,6 @@ section {
 
 @media (max-width: 500px) {
 	.header_separator {
-		/*margin-top: 10px; */
 		display: none;
 	}
 
@@ -888,7 +887,6 @@ section {
 	}
 	
 }
-
 
 @media (max-width: 350px) {
 	#slider .left {
