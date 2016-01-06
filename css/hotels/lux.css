@@ -1,6 +1,5 @@
 #top {
 	background-image: url(../../img/hotels/lux/lux.jpg);
-	background-position: bottom;
 }
 
 @media screen and (max-width: 780px) {

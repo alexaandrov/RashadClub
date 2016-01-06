@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Poiret One', 'RobotoLight','PT Sans', 'Arial';
+	font-family: 'RobotoLight', 'Arial';
 	min-width: 300px;
 	background: #f2f2f2;
 	-webkit-font-smoothing: antialiased;
@@ -73,7 +73,6 @@ h1 {
 
 h2 {
 	font-family: 'Poiret One', 'RobotoLight','PT Sans', 'Arial';
-	color: #434343;
 	font-size: 40px;
 	text-align: center;
 	padding: 0;
@@ -92,6 +91,7 @@ h2 {
 
 .main-header {
 	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
+	color: #434343;
 }
 
 h3 {
@@ -338,15 +338,17 @@ section {
 
 /* TOP Section*/
 #top {
-	position: relative;
-	background-attachment: fixed;
-	height: 650px;
+	/*position: relative;*/
+	/*background-attachment: fixed;*/
 	text-align: center;
+	background-position: center;
+	overflow: hidden;
 }
 
 #top .wrapper {
 	background: rgba(0,0,0,0.15);
 	height: 100%;
+	overflow: hidden;
 }
 
 #top h1 {
@@ -387,17 +389,15 @@ section {
 
 #top .contacts {
 	margin: 0 auto;
-	margin-top: 20px;
-	height: 10%;
+	margin-bottom: 40px;
 	text-align: center;
-	position: absolute;
-	bottom: 80px;
+	font-family: Arial;
 }
 
 #top .contacts a {
 	font-size: 30px;
 	color: white;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-align: center;
 	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.55);
 	border-radius: 5px;
@@ -453,11 +453,16 @@ section {
 	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
 }
 
+#comfort .block h3 {
+	font-family: 'RobotoLight', Arial;
+}
+
 #comfort .block > ul > li {
 	font-size: 20px;
-	font-family: 'PT Sans', 'RobotoLight';
+	font-family: 'RobotoLight', Arial;
 	list-style-image: url(../../img/hotels/block_list_style_type.png);
-	padding: 3px 0;
+	padding: 3px 0px;
+	padding-right: 20px;
 	cursor: default;
 }
 
@@ -593,7 +598,6 @@ section {
 /* FOOTER */
 .footer {
 	overflow: hidden;
-	height: 100%;
 	background-color: #333333;
 	color: #ECECEC;
 	font-family: 'Poiret One';
@@ -629,54 +633,10 @@ section {
 /* END FOOTER */
 
 /* Mobile view */
-@media (max-width: 1080px) {
-
-	#slideshow #slider {
-		display: none;
+@media screen and (max-width: 1024px) {
+	body {
+		font-family: 'RobotoLight', 'PT Sans', Arial;
 	}
-	#slideshow_mob {
-		display: block;
-		margin-top: 30px;
-	}
-	#slideshow_mob img {
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-		/*overflow: hidden;*/
-		height: 20%;
-		margin: 5px 0;
-
-}
-
-@media (max-width: 950px) {
-	.header .logo .img {
-		width: 160px;
-		height: 60px;
-		background-size: 100% 60px;
-	}
-
-	.header .nav-menu > li > a {
-		font-size: 18px;
-
-	}
-
-	#comfort .block h3 {
-		font-size: 20px;
-	}
-
-	#comfort .block > ul > li {
-		font-size: 15px;
-	}
-}
-
-@media (max-width: 850px) {
-	#comfort .block {
-		width: 45%;
-		margin-bottom: 0px;
-	}
-}
-/* MOBILE VIEW */
-@media screen and (max-width: 780px) {
 	.header .wrapper {
 		position: fixed;
 		z-index: 99999;
@@ -771,6 +731,69 @@ section {
 		z-index: 9999999999;
 	}
 
+	#top h1 {
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 1120px) {
+	.main-header {
+		text-shadow: none;
+	}
+	h2 {
+		font-family: 'RobotoLight', 'PT Sans', Arial;
+	}
+	#comfort .block h3 {
+		font-size: 20px;
+	}
+	#comfort .block > ul > li {
+		font-size: 17px;
+	}
+	#slideshow #slider {
+		display: none;
+	}
+	#slideshow_mob {
+		display: block;
+		margin-top: 30px;
+	}
+	#slideshow_mob img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		margin: 5px 0;
+}
+
+
+@media (max-width: 950px) {
+	.header .logo .img {
+		width: 160px;
+		height: 60px;
+		background-size: 100% 60px;
+	}
+
+	.header .nav-menu > li > a {
+		font-size: 18px;
+
+	}
+
+	#comfort .block h3 {
+		font-size: 18px;
+	}
+
+	#comfort .block > ul > li {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 850px) {
+	#comfort .block {
+		width: 45%;
+		margin-bottom: 0px;
+	}
+}
+/* MOBILE VIEW */
+@media screen and (max-width: 780px) {
+
 	/* BUTTON GO TO UP */
 	.up_btn {
 		width: 56px;
@@ -863,16 +886,11 @@ section {
 		top: 0px;
 		padding: 250px 5%;
 	}
+	
 }
 
 
 @media (max-width: 350px) {
-	#top {
-		height: 450px;
-	}
-	#top .contacts a {
-		padding-left: 10px;
-	}
 	#slider .left {
 		position: absolute;
 		width: 70px;
