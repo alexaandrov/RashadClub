@@ -382,11 +382,11 @@ section {
 
 #top .contacts_wrapper {
 	margin: 0 auto;
-	max-width: 300px;
-	width: 100%;
+	width: 300px;
 }
 
 #top .contacts {
+	margin: 0 auto;
 	margin-top: 20px;
 	height: 10%;
 	text-align: center;
@@ -395,7 +395,6 @@ section {
 }
 
 #top .contacts a {
-	/*font-family: 'Poi', RobotoLight;*/
 	font-size: 30px;
 	color: white;
 	font-weight: bold;
@@ -493,6 +492,7 @@ section {
 #slider {
 	position: relative;
 	margin: 50px auto;
+	margin-bottom: 0px;
 	padding: 0px;
 	width: 100%;
 	height: 950px;
@@ -589,6 +589,44 @@ section {
 	-webkit-transition: all 0.3s ease-out;
 }
 /* SLIDESHOW end */
+
+/* FOOTER */
+.footer {
+	overflow: hidden;
+	height: 100%;
+	background-color: #333333;
+	color: #ECECEC;
+	font-family: 'Poiret One';
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer .stars {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.footer .rashad {
+	margin: 0 auto;
+	background-image: url(../../img/header/rashad-mini-two.png);
+	background-size: 100% 100%;
+	width: 180px;
+	height: 59px;
+}
+
+.footer .phones {
+	font-size: 30px;
+}
+
+.footer .phones > a {
+	color: white;
+}
+
+.footer .copyright {
+	font-size: 14px;
+	margin-bottom: 80px;
+}
+/* END FOOTER */
 
 /* Mobile view */
 @media (max-width: 1080px) {

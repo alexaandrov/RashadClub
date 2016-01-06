@@ -58,11 +58,12 @@ h3 {
 
 .header .logo .img {
 	display: block;
-	width: 350px;
-	height: 85px;
+	width: 270px;
+	height: 80px;
 	margin: 20px 0px;
+	margin-left: 50px;
 	background-image: url(../img/header/rashad.png);
-	background-size: 100% 75px;
+	background-size: 100% 80px;
 	background-repeat: no-repeat;
 	-moz-transition: all 0.8s ease-out;
 	-o-transition: all 0.8s ease-out;
@@ -70,14 +71,18 @@ h3 {
 }
 
 .header .logo .img:hover {
-	background-image: url(../img/header/rashad-hover.png);
+	opacity: 0.8;
 }
 
 .header .logo .img:active {
-	background-image: url(../img/header/rashad.png);
-	-moz-transition: all 0.03s ease-out;
-	-o-transition: all 0.03s ease-out;
-	-webkit-transition: all 0.03s ease-out;
+	opacity: 1;
+	margin-top: 30px;
+	margin-left: 55px;
+	width: 255px;
+	background-size: 100% 65px;
+	-moz-transition: all 0.0s ease-out;
+	-o-transition: all 0.0s ease-out;
+	-webkit-transition: all 0.0s ease-out;
 }
 
 .header .logo a {
@@ -95,23 +100,26 @@ h3 {
 .header .nav-menu > li {
 	float: left;
 	display: inline-block;
+	margin-top: 30px;
 }
 
 .header .nav-menu > li > a {
 	display: table-cell;
-	padding: 35px 8px;
-	margin:  0px;
+	padding: 0px 8px;
+	margin:  0;
 	font-weight: bold;
 	font-size: 20px;
+	font-family: 'Poiret One', RobotoLight, Arial;
 	-moz-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
 	-webkit-transition: all 0.4s ease-out;
 	color: white;
 	text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.55);
+	cursor: pointer;
 }
 
 .header .nav-menu > li > a:hover {
-	color: black;
+	color: #e81f1f;
 	text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.65);
 }
 
@@ -122,7 +130,6 @@ h3 {
 	-o-transition: all 0.01s ease-out;
 	-webkit-transition: all 0.01s ease-out;
 }
-
 /* END HEADER */
 
 /* GALLERY */
@@ -251,3 +258,41 @@ h3 {
 	background:  url(demo4.jpg) center center;
 	background-size: cover;
 }
+
+/* FOOTER */
+.footer {
+	overflow: hidden;
+	height: 40%;
+	background-color: #333333;
+	color: #ECECEC;
+	font-family: 'Poiret One';
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer .stars {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.footer .rashad {
+	margin: 0 auto;
+	background-image: url(../img/header/rashad-mini-two.png);
+	background-size: 100% 100%;
+	width: 180px;
+	height: 59px;
+}
+
+.footer .phones {
+	font-size: 30px;
+}
+
+.footer .phones > a {
+	color: white;
+}
+
+.footer .copyright {
+	font-size: 14px;
+	margin-bottom: 80px;
+}
+/* END FOOTER */
