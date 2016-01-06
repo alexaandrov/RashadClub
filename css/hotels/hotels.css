@@ -1,9 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: RobotoLight, Arial;
+	font-family: 'Poiret One', 'RobotoLight','PT Sans', 'Arial';
 	min-width: 300px;
 	background: #f2f2f2;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* font-family: "RobotoLight"; */
@@ -15,6 +16,14 @@ body {
     url("../../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+}
+
+/* font-family: "PT Sans"; */
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../../fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* font-family: "Poiret One"; */
@@ -52,17 +61,19 @@ body {
 a {
 	text-decoration: none;
 	color: black;
+	outline: none;
 }
 
 h1 {
-	font-family: 'Poiret One', RobotoLight, Arial;
+	font-family: 'Poiret One', 'RobotoLight','PT Sans', 'Arial';
 	margin: 0;
 	padding: 0;
 	cursor: default;
 }
 
 h2 {
-	font-family: 'Poiret One', RobotoLight, Arial;
+	font-family: 'Poiret One', 'RobotoLight','PT Sans', 'Arial';
+	color: #434343;
 	font-size: 40px;
 	text-align: center;
 	padding: 0;
@@ -74,13 +85,13 @@ h2 {
 	font-family: 'Poiret One';
 	margin: 0;
 	padding: 0;
-	margin-top: 50px;
+	margin-top: 25px;
 	font-size: 40px;
 	text-align: center;
 }
 
 .main-header {
-	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.55);
+	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
 h3 {
@@ -135,12 +146,12 @@ h3 {
 
 .header .logo .img {
 	display: block;
-	width: 300px;
-	height: 75px;
+	width: 270px;
+	height: 80px;
 	margin: 20px 0px;
 	margin-left: 50px;
 	background-image: url(../../img/header/rashad.png);
-	background-size: 100% 75px;
+	background-size: 100% 80px;
 	background-repeat: no-repeat;
 	-moz-transition: all 0.8s ease-out;
 	-o-transition: all 0.8s ease-out;
@@ -148,11 +159,15 @@ h3 {
 }
 
 .header .logo .img:hover {
-	background-image: url(../../img/header/rashad-hover.png);
+	opacity: 0.8;
 }
 
 .header .logo .img:active {
-	background-image: url(../../img/header/rashad-active.png);
+	opacity: 1;
+	margin-top: 30px;
+	margin-left: 55px;
+	width: 255px;
+	background-size: 100% 65px;
 	-moz-transition: all 0.0s ease-out;
 	-o-transition: all 0.0s ease-out;
 	-webkit-transition: all 0.0s ease-out;
@@ -214,10 +229,26 @@ h3 {
 	margin-top: 20px;
 	cursor: pointer;
 	display: none;
+	opacity: 0.9;
+	-webkit-filter: opacity(90%);
+	-moz-opacity: 0.9;
+	-o-opacity: 0.9;
+	filter: alpha(opacity =90);
 }
 
+.header .mini_menu_btn:hover {
+	opacity: 0.8;
+	-webkit-filter: opacity(80%);
+	-moz-opacity: 0.8;
+	-o-opacity: 0.8;
+	filter: alpha(opacity =80);
+}
 .header .mini_menu_btn:active {
-	background-image: url(../../img/icons/menu-active.png);
+	opacity: 1;
+	-webkit-filter: opacity(100%);
+	-moz-opacity: 1;
+	-o-opacity: 1;
+	filter: alpha(opacity =100);
 }
 
 .header_mini_menu {
@@ -269,17 +300,26 @@ h3 {
 	margin-bottom: 10px;
 	margin-right: 15px;
 	z-index: 9999999999;
-	opacity: 0.7;
-	filter: alpha(opacity =70);
+	opacity: 0.9;
+	-webkit-filter: opacity(90%);
+	-moz-opacity: 0.9;
+	-o-opacity: 0.9;
+	filter: alpha(opacity =90);
 }
 
 .up_btn:hover {
-	opacity: 1;
-	filter: alpha(opacity =100);
+	-webkit-filter: opacity(80%);
+	-moz-opacity: 0.8;
+	-o-opacity: 0.8;
+	filter: alpha(opacity =80);
 }
 
 .up_btn:active {
-	background-image: url(../../img/icons/up-active.png);
+	opacity: 1;
+	-webkit-filter: opacity(100%);
+	-moz-opacity: 1;
+	-o-opacity: 1;
+	filter: alpha(opacity =100);
 }
 /* END UP_BTN */
 
@@ -320,6 +360,26 @@ section {
 	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
+#top h3 {
+	color: white;
+	margin-top: 20px;
+	font-weight: 400;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+#top .price {
+}
+
+#top .price > *{
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+	padding: 0 5px;
+	font-size: 80px;
+	text-shadow: 2px 8px 2px rgba(0, 0, 0, 0.7);
+	text-transform: uppercase;
+}
+
 #top .contacts_wrapper {
 	margin: 0 auto;
 	max-width: 300px;
@@ -335,7 +395,7 @@ section {
 }
 
 #top .contacts a {
-	font-family: RobotoLight;
+	/*font-family: 'Poi', RobotoLight;*/
 	font-size: 30px;
 	color: white;
 	font-weight: bold;
@@ -358,7 +418,7 @@ section {
 	background-image: url(../../img/hotels/block_separator.png);
 	border-radius: 4px;
 }
-
+/*
 #top .bn_wrapper {
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
@@ -371,8 +431,7 @@ section {
 
 #top #_bn_widget_ {
 	position: absolute;
-	/*display: none;*/
-}
+}*/
 /* END sec.*/
 
 /* COMFORT Section */
@@ -397,7 +456,8 @@ section {
 
 #comfort .block > ul > li {
 	font-size: 20px;
-	list-style-image: url(../../img/hotels/block_separator_green.png);
+	font-family: 'PT Sans', 'RobotoLight';
+	list-style-image: url(../../img/hotels/block_list_style_type.png);
 	padding: 3px 0;
 	cursor: default;
 }
@@ -426,21 +486,26 @@ section {
 }
 
 /* SLIDESHOW section*/
+
+#slideshow_mob {
+	display: none;
+}
 #slider {
 	position: relative;
 	margin: 50px auto;
 	padding: 0px;
 	width: 100%;
-	height: 600px;
+	height: 950px;
 }
 
 #slider #scr {
 	margin: 20px auto;
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	margin-top:0px;
 	background-color: white;
-	background-size: 100% 100%;
+	outline: none;
+	/*background-size: 100% 100%;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -454,8 +519,8 @@ section {
 }
 
 #slider .buttons {
-	width: 25px;
-	height: 70px;
+	width: 85px;
+	height: 85px;
 	float: left;
 	ont-size: 80px;
 	cursor: pointer;
@@ -480,8 +545,8 @@ section {
 	width: 70px;
 	left: 50px;
 	top: 0px;
-	padding: 250px 0px;
-	padding-right: 52%;
+	padding: 380px 0px;
+	padding-right: 57%;
 }
 
 #slider .right {
@@ -489,8 +554,8 @@ section {
 	width: 70px;
 	right: 50px;
 	top: 0px;
-	padding: 250px 0px;
-	padding-left: 47%;
+	padding: 380px 0px;
+	padding-left: 43%;
 	z-index: 99999999;
 }
 
@@ -526,6 +591,25 @@ section {
 /* SLIDESHOW end */
 
 /* Mobile view */
+@media (max-width: 1080px) {
+
+	#slideshow #slider {
+		display: none;
+	}
+	#slideshow_mob {
+		display: block;
+		margin-top: 30px;
+	}
+	#slideshow_mob img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		/*overflow: hidden;*/
+		height: 20%;
+		margin: 5px 0;
+
+}
+
 @media (max-width: 950px) {
 	.header .logo .img {
 		width: 160px;
@@ -670,7 +754,12 @@ section {
 		padding-top: 70px;
 		font-size: 10vw;
 	}
-
+	#top h3 {
+		font-size: 22px;
+	}
+	#top .price > *{
+		font-size: 75px;
+	}
 
 	#slider .left {
 		position: absolute;
