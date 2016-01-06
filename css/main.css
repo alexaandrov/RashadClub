@@ -1,14 +1,20 @@
 body {
 	margin: 0;
 	padding: 0;
-	min-width: 250px;
+	/*min-width: 850px;*/
 	min-height: 500px;
 	font-family: RobotoLight, Arial;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
 	text-decoration: none;
 	color: black;
+}
+
+h2,h3 {
+	color: #434343;
+	font-family: 'Poiret One', RobotoLight;
 }
 
 h2 {
@@ -31,128 +37,117 @@ h3 {
     font-weight: normal;
 }
 
+/* font-family: "Poiret One"; */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular.ttf) format("truetype");
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular-Cyr.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular-lat-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne/PoiretOne-Regular-lat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 #top {
 	min-height: 500px;
 	min-width: 250px;
 	background-image: url(../img/main.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
-	background-size: 100% 100%;
 	margin: 0 auto;
-    position: absolute;
 	z-index: 1;
     width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    height: 650px;
 	padding: 0;
 	overflow: hidden;
 }
 
-#top .bnovo {
-	height: 20%;
+#top .menu {
+	margin: 0 auto;
+	padding-top: 0%;
+	height: 50%;
+	max-width: 700px;
+	width: 100%:;
 }
 
-#top .btn_cross {
-	float: right;
-	position: absolute;
-	right: -28px;
-	top: 0px;
-	z-index: 10000;
-	background-image: url(../img/icons/cross.png);
-	background-size: 100%;
-	width: 23px;
-	height: 23px;
+#top .rashad-logo {
+	margin: 0 auto;
+	background-image: url(../img/top/rashad-logo.png);
+	background-size: 100% 100%;
+	height: 60%;
+	width: 80%;
+	margin-top: 80px;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
 	cursor: pointer;
 }
 
-#top #_bn_widget_ a {
-	top: 126px;
+#top .rashad-logo:hover {
+	opacity: 0.9;
 }
 
-#top .btn_cross:hover {
-	background-image: url(../img/icons/cross-active.png);
-}
-
-#top .btn_cross:active {
-	background-image: url(../img/icons/cross.png);
-}
-
-#top .button {
-	overflow: hidden;
-	margin: 10px auto;
-	border: 1px solid #719E5B;
-	padding: 15px;
-	width: 300px;
-	text-align: center;
-	font-family: RobotoLight;
-	font-size: 25px;
-	cursor: pointer;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	-webkit-transition: all 0.4s ease;
-	border-radius: 3px;
-}
-
-#top .button:hover {
-	background-color: #719E5B;
-	color: white;
-}
-
-#top .button:active {
+#top .rashad-logo:active {
+	width: 75%;
+	height: 55%;
 	-moz-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
 	-webkit-transition: all 0.1s ease;
 }
 
-#top .bn_wrapper {
-	position: absolute;
-	width: 100%;
-}
-
-.bn {
+#top .menu .menu-header {
 	margin: 0 auto;
-	height: 80px;
-	top: -180px;
+	color: white;
+	display: block;	
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55);
 }
 
-#top .menu {
+#top .menu .menu-header:hover {
+	color: #FFDEDE;
+}
+
+.menu-header-mob {
+	display: none;
 	margin: 0 auto;
-	padding-top: 8%;
-	height: 50%;
-	max-width: 500px;
-	width: 100%:;
-}
-
-#top .rashad-logo {
-	background-image: url(../img/top/rashad-club.png);
-	background-size: 100% 100%;
-	height: 40%;
-	width: 100%;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-webkit-transition: all 1s ease;
-}
-
-#top .rashad-logo:hover {
-	background-image: url(../img/top/rashad-club-active.png);
-	background-size: 100% 100%;
-	height: 55%;
-	width: 100%;
-	cursor: pointer;
-}
-
-#top .menu p {
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
-	padding: 0;
-	margin: 0;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55);
+}
+
+#top .menu .menu-header-mob:hover {
+	color: #FFDEDE;
 }
 
 #top .menu > ul {
@@ -165,44 +160,56 @@ h3 {
 #top .menu > ul > li {
 	display: inline-block;
 	list-style-type: none;
-	border: 2px solid white;
+	padding: 0;
+	border: 1px solid #414141;
+	background-color: #414141;
 	border-radius: 2px;
 	cursor: pointer;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
 }
 
 #top .menu > ul > li:hover {
-	background-color: white;
-	color: black;
+	border-color: #c73838;
+	background-color: #c73838;
+	color: white;
 }
 
 #top .menu > ul > li:active {
 	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 22px 0px rgba(0,0,0,0.75);
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0s ease-out;
+	-o-transition: all 0s ease-out;
+	-webkit-transition: all 0s ease-out;
 }
 
 #top .menu > ul > li > a {
 	padding: 0;
 	margin: 0;
 	display: block;
-	color: black;
-	font-size: 18px;
 	color: white;
-	padding: 10px;
+	font-size: 18px;
+	padding: 8px 20px;
 }
 
 #top .menu > ul > li > a:hover {
-	color: black;
+	color: white;
+}
+
+#top .ctn_wrap {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 300px;
+	background: red;
+	position: relative;
+	background: red;
 }
 
 #top .contacts {
-	height: 10%;
+	padding-bottom: 0px;
+	margin-right: 50px;
 	text-align: center;
 }
 
@@ -213,7 +220,7 @@ h3 {
 
 #top .wrap {
 	margin: 0 auto;
-	max-width: 250px;
+	/*max-width: 350px;*/
 	display: inline-block;
 }
 
@@ -222,10 +229,11 @@ h3 {
 }
 
 #top .contacts a:hover {
-	color: #6495ed;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	-webkit-transition: all 0.5s ease-out;
+	color: #F11717;
+	font-weight: bold;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
 }
 
 #top .phone {
@@ -234,37 +242,398 @@ h3 {
 	height: 82px;
 	background-image: url(../img/icons/phone.png);
 	background-size: 100% 100%;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	-webkit-transition: all 0.5s ease-out;
 }
 
-/* MEDIA */
-@media (max-width: 450px) {
-	#top .menu > ul > li {
+/* BUTTON GO TO UP */
+.up_btn {
+	position: fixed;
+	background-image: url(../img/icons/up.png);
+	background-size: 100% 100%;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	float: right;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 10px;
+	margin-right: 15px;
+	z-index: 9999999999;
+	opacity: 0.9;
+	-webkit-filter: opacity(90%);
+	-moz-opacity: 0.9;
+	-o-opacity: 0.9;
+	filter: alpha(opacity =90);
+}
+
+.up_btn:hover {
+	-webkit-filter: opacity(80%);
+	-moz-opacity: 0.8;
+	-o-opacity: 0.8;
+	filter: alpha(opacity =80);
+}
+
+.up_btn:active {
+	opacity: 1;
+	-webkit-filter: opacity(100%);
+	-moz-opacity: 1;
+	-o-opacity: 1;
+	filter: alpha(opacity =100);
+}
+/* END UP_BTN */
+
+section {
+	min-width: 850px;
+	margin: 0;
+	padding: 0;
+}
+
+#about-us {
+	overflow: hidden;
+	width: 100%;
+	margin: 70px 0;
+}
+
+#about-us .wrapper {
+	margin: 0 auto;
+	max-width: 900px;
+	width: 100%;
+	color: black;
+}
+
+#about-us h3 {
+	text-align: center;
+	margin: 0;
+}
+
+#about-us p {
+	font-size: 20px;
+	text-align: center;
+}
+
+#about-us .wrapper .separator.one {
+	margin-top: 20px;
+	width: 120px;
+	height: 2px;
+}
+
+#about-us .wrapper .separator.two {
+	margin-bottom: 20px;
+	width: 120px;
+	height: 2px;
+}
+.separator {
+	margin: 0 auto;
+	background-color: blue;
+	opacity: 0.3;
+	width: 20%;
+	height: 3px;
+}
+
+#rashad {
+	width: 100%;
+	overflow: hidden;
+	background: #faf6f5;
+}
+
+#rashad .wrapper {
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+#rashad .photo {
+	width: 35%;
+	float: left;
+	background-image: url(../img/top/rashad.jpg);
+	background-position: bottom;
+	/*background-size: 100% 100%;*/
+	height: 600px;
+}
+
+/* RASHAD TEXT */
+#rashad .rashad-header-mob {
+	display: none;
+	margin: 40px;
+	text-align: center;
+}
+
+#rashad .text {
+	float: left;
+	width: 65%;
+}
+
+#rashad .text h3 {
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+#rashad .text p {
+	font-size: 16px;
+	margin: 20px 50px;
+}
+
+#rashad .text .sell {
+	font-size: 20px;
+	margin: 30px 30px;
+	margin-top: 40px;
+	margin-left: 80px;
+	padding-left: 20px;
+	border-left: 3px solid #B3C0FF;
+}
+
+/* END RASHAD TEXT */
+
+#apartments {
+	overflow: hidden;
+	width: 100%;
+}
+
+#apartments .wrapper {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+}
+
+#apartments h2 {
+	text-align: center;
+}
+
+#apartments .apartments_list {
+	height: 100%;
+}
+
+#apartments .apartments {
+	float: left;
+	height: 500px;
+	margin: 0 0.5%;
+	text-align: center;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#apartments .apartments:hover {
+	background-color: #EDEDED;
+}
+
+#apartments .apartments.comfort {
+	width: 30%;
+}
+#apartments .apartments.vip {
+	width: 35%;
+}
+#apartments .apartments.lux {
+	width: 30%;
+}
+
+#apartments .apartments .apart_img {
+	width: 100%;
+	height: 70%;
+	border-radius: 2px; 
+}
+
+#apartments .apartments .apart_img:hover{
+	opacity: 0.8;
+}
+
+#apartments .apartments.comfort .apart_img {
+	background-image: url(../img/hotels/comfort/comfort_mob.jpg);
+	background-position: left;
+	width: 100%;
+}
+#apartments .apartments.vip .apart_img {
+	background-image: url(../img/hotels/vip/vip_mob.jpg);
+	background-position: right;
+	width: 100%;
+}
+#apartments .apartments.lux .apart_img {
+	background-image: url(../img/hotels/lux/lux_mob.jpg);
+	background-position: left;
+	width: 100%;
+}
+
+#apartments .apartments .apart_info .name {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+#apartments .apartments .apart_info .about {
+	margin: 5px 5px;
+	padding: 0;
+	color: #868686;
+	margin-bottom: 10px; 
+}
+
+#apartments .apartments .separator {
+	margin: 0 auto;
+	background-color: red;
+	opacity: 0.3;
+	width: 50%;
+	height: 3px;
+}
+
+#apartments .apartments .price_info {
+	margin: 5px 10px;
+	padding: 0;
+}
+
+#apartments .apartments .price_info > li {
+	list-style-type: none;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+
+#apartments .apartments .price_info .apart_price {
+	font-size: 25px;
+	font-weight: bold
+}
+
+#map {
+	height: 400px;
+}
+
+.footer {
+	overflow: hidden;
+	background-color: #333333;
+	color: #ECECEC;
+	font-family: 'Poiret One';
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer .stars {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.footer .rashad {
+	margin: 0 auto;
+	background-image: url(../img/header/rashad-mini-two.png);
+	background-size: 100% 100%;
+	width: 180px;
+	height: 59px;
+}
+
+.footer .phones {
+	font-size: 30px;
+}
+
+.footer .phones > a {
+	color: white;
+}
+
+.footer .copyright {
+	font-size: 14px;
+	margin-bottom: 80px;
+}
+
+@media (max-width: 1100px) {
+	#rashad .text .rashad-header {
+		display: none;
+	}
+	#rashad .rashad-header-mob {
 		display: block;
-		background-color: white;
+	}
+	#rashad .text p {
+		font-size: 14px;
+	}
+	#rashad .text .sell {
+		font-size: 16px;
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 860px) {
+	#top {
+		background-image: url(../img/main_mob.jpg);
+	}
+	#top .menu .menu-header {
+		display: none;
+	}
+	#top .menu .menu-header-mob {
+		display: block;
+		cursor: default;
+	}
+	#rashad .photo {
+		width: 100%;
+	}
+	#rashad .text {
+		width: 100%;
+	}
+	#rashad .text .rashad-header {
+		display: none;
+	}
+	#rashad .rashad-header-mob {
+		display: block;
+	}
+	#rashad .text p {
+		font-size: 16px;
+	}
+	#rashad .text .sell {
+		font-size: 16px;
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+
+	#apartments .apartments.lux{
+		width: 100%;
+	}
+	#apartments .apartments.comfort{
+		width: 100%;
+	}
+	#apartments .apartments.vip{
+		width: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	#rashad .text h3 {
+		font-size: 22px;
+	}
+	#rashad .text p {
+		font-size: 16px;
+		margin: 20px;
+	}
+	#rashad .text .sell {
+		margin: 0;
+		margin-left: 30px;
+}
+
+
+@media (max-width: 480px) {
+	#top {
+		background-image: url(../img/main_mobile.jpg);
+	}
+	#top .menu > ul > li {
+		background-color: #3b3b3b;
+		border-color: #3b3b3b;
+		display: block;
 		margin: 5px;
-	}
-	#top .menu > ul > li > a {
-		color: black;
-		font-weight: bold;
-	}
-	#top .bnovo {
-		height: 15%;
 	}
 	#top .menu {
 		padding-top: 0;
 		height: 65%;
 	}
-	#top .menu p {
-		padding-top: 10px;
-	}
 	#top .rashad-logo {
-		background-image: url(../img/top/rashad-club-active.png);
-		height: 35%;
-		width: 80%;
+		background-image: url(../img/top/rashad-logo-mob.png);
 		margin: 0 auto;
+		/*background-size: 100% 100%;*/
+		margin-top: 40px;
+		width: 90%;
+		height: 165px;
+		background-repeat: no-repeat;
+	}
+	#top .rashad-logo:hover {
+		height: 35%;
+	}
+	#top .rashad-logo:active {
 	}
 	#top .button {
 		font-size: 15px;
@@ -272,7 +641,7 @@ h3 {
 		width: 150px;
 	}
 	#top .contacts {
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 	#top .contacts a {
 		font-size: 20px;
@@ -282,3 +651,4 @@ h3 {
 		height: 50px;
 	}
 }
+

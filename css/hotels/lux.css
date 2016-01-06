@@ -1,4 +1,13 @@
 #top {
-	background-image: url(../../img/hotels/lux/main.jpg);
-	background-position: bottom;
+	background-image: url(../../img/hotels/lux/lux.jpg);
+}
+
+@media screen and (max-width: 780px) {
+	#top {
+		background-image: url(../../img/hotels/lux/lux_mob.jpg);
+		background-position: center;
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
 }
