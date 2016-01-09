@@ -343,11 +343,12 @@ section {
 
 #rashad .photo {
 	width: 35%;
+	margin-top: 10px;
 	float: left;
 	background-image: url(../img/top/rashad.jpg);
 	background-position: bottom;
-	/*background-size: 100% 100%;*/
 	height: 600px;
+	border-radius: 2px;
 }
 
 /* RASHAD TEXT */
@@ -438,17 +439,17 @@ section {
 }
 
 #apartments .apartments.comfort .apart_img {
-	background-image: url(../img/hotels/comfort/comfort_mob.jpg);
+	background-image: url(../img/hotels/comfort/main_page/comfort_mini.jpg);
 	background-position: left;
 	width: 100%;
 }
 #apartments .apartments.vip .apart_img {
-	background-image: url(../img/hotels/vip/vip_mob.jpg);
+	background-image: url(../img/hotels/vip/main_page/vip_mini.jpg);
 	background-position: right;
 	width: 100%;
 }
 #apartments .apartments.lux .apart_img {
-	background-image: url(../img/hotels/lux/lux_mob.jpg);
+	background-image: url(../img/hotels/lux/main_page/lux_mini.jpg);
 	background-position: left;
 	width: 100%;
 }
@@ -591,6 +592,22 @@ section {
 	#apartments .apartments.vip{
 		width: 100%;
 	}
+	#apartments .apartments.comfort .apart_img {
+		background-image: url(../img/hotels/comfort/comfort_mob.jpg);
+		background-position: left;
+		width: 100%;
+	}
+	#apartments .apartments.vip .apart_img {
+		background-image: url(../img/hotels/vip/vip_mob.jpg);
+		background-position: left;
+		width: 100%;
+	}
+	#apartments .apartments.lux .apart_img {
+		background-image: url(../img/hotels/lux/lux_mob.jpg);
+		background-position: left;
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 560px) {
@@ -624,7 +641,6 @@ section {
 	#top .rashad-logo {
 		background-image: url(../img/top/rashad-logo-mob.png);
 		margin: 0 auto;
-		/*background-size: 100% 100%;*/
 		margin-top: 40px;
 		width: 90%;
 		height: 165px;

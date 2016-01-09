@@ -5,10 +5,8 @@
 @media screen and (max-width: 780px) {
 	#top {
 		background-image: url(../../img/hotels/vip/vip_mob.jpg);
-		background-position: center;
-		background-position: top;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
+		background-position: left;
+		background-attachment: none;
 	}
 }
 
