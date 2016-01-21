@@ -45,7 +45,7 @@
 		
 		<!-- Emika full pms виджет -->
 		<div class="emika">
-			<form name="EmikaPms" method="post" action="index.php">
+			<form name="EmikaPms" method="POST">
 				<div>
 					<p>Въезд</p>
 					<input type="date" name="check-in" class="checkIn"></input>
@@ -67,37 +67,13 @@
 		</div>
 		<!-- Конец блока -->
 	</div>
-	
 	<!-- Конец секции -->
-	
-	<?php
-	include_once('connect.php');
-	if(isset($_POST['check'])) {
-		$checkIn = strip_tags(trim($_POST['check-in']));
-		$checkOut = strip_tags(trim($_POST['check-out']));
-		$adults = strip_tags(trim($_POST['adults']));
-		$children = strip_tags(trim($_POST['children']));
-	
-	mysql_query(" 
-				INSERT INTO `p9247_rashadclub`.`emika` (`ckeckIn`, `checkOut`, `adults`, `children`) 
-				VALUES ('$checkIn', '$checkOut', '$adults', '$children');
-				");
-	
-	mysql_close();
-	
-	echo "Данные отправлены";
-	echo "Я отправил: '$checkIn' '$checkOut' '$adults' '$children'";
-	} 
-	else {
-		echo "Ошибка";
-	}
-	?>
 
 	<!-- EmikaPMS mob widget -->
 	<div class="section" id="emika-mob">
 		<h3>Забронируйте прямо сейчас!</h3>
 		<div class="emika">
-			<form name="EmikaPms"  method="post" action="index.php">
+			<form name="EmikaPms"  method="POST">
 				<div>
 					<p>Въезд</p>
 					<input type="date" name="check-in" class="checkIn"></input>
@@ -118,9 +94,9 @@
 			</form>
 		</div>
 		<!-- Конец блока -->
-		<p id="result" align="center">default</p>
 	</div>
 	<!-- EmikaPMS mob widget -->
+	<p id="txt" align="center">default</p>
 	
 	<!-- #Секция "О нас" -->
 	<div class="section" id="about-us">
@@ -276,7 +252,7 @@
 <!-- Конец -->
 <!-- SCRIPTS -->
 <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-<!--<script src="emika.js"></script> -->
+<script src="js/emika.js"></script>
 </body>
 </html>
 
