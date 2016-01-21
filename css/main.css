@@ -275,7 +275,7 @@ h3 {
 	padding: 10px;
 }
 
-#top .emika form > input[type="button"] {
+#top .emika form > input[type="submit"] {
 	padding: 15px 50px;
 	position: absolute;
 	margin-top: 30px;
@@ -287,12 +287,13 @@ h3 {
 	text-transform: uppercase;
 	color: white;
 	outline: none;
+	cursor: pointer;
 }
 
-#top .emika form > input[type="button"]:hover {
+#top .emika form > input[type="submit"]:hover {
 	background-color: rgba(255, 92, 92, 1);
 }
-#top .emika form > input[type="button"]:active {
+#top .emika form > input[type="submit"]:active {
 	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -694,7 +695,7 @@ section {
 	#emika-mob .emika form > div > input[type="number"] {
 		padding: 10px 2%;
 	}
-	#emika-mob .emika form > input[type="button"] {
+	#emika-mob .emika form > input[type="submit"] {
 		margin: 0 auto;
 		padding: 15px 0;
 		margin-top: 25px;
@@ -708,10 +709,10 @@ section {
 		outline: none;
 		width: 100%;
 	}
-	#emika-mob .emika form > input[type="button"]:hover {
+	#emika-mob .emika form > input[type="submit"]:hover {
 		background-color: rgba(255, 92, 92, 1);
 	}
-	#emika-mob .emika form > input[type="button"]:active {
+	#emika-mob .emika form > input[type="submit"]:active {
 		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
