@@ -258,8 +258,8 @@ h3 {
 	margin: 10px;
 }
 
-#top .emika form > div > input {
-	padding: 8px;
+#top .emika form > div > input, select {
+	padding: 10px;
 	margin: 2px 0;
 	border: 0;
 	border-radius: 1px;
@@ -270,15 +270,15 @@ h3 {
 	opacity: 1;
 }
 
-#top .emika form > div > input[type="number"] {
-	width: 100px;
-	padding: 10px;
+#top .emika form > div > select {
+	width: 100%;
+	padding: 9px;
 }
 
 #top .emika form > input[type="submit"] {
 	padding: 15px 50px;
 	position: absolute;
-	margin-top: 30px;
+	margin-top: 32px;
 	margin-left: 10px;
 	background-color: rgba(255, 92, 92, 0.9);
 	border: 0;
@@ -679,20 +679,23 @@ section {
 		margin: auto;
 		width: 96%;
 	}
-	#emika-mob .emika form > div > input {
-		padding: 8px 2%;
+	#emika-mob .emika form > div > input,select {
+		padding: 10px 2%;
 		border: 1px solid #bdbdbd;;
 		border-radius: 1px;
 		opacity: 0.9;
-		color: #bdbdbd;
+		color: #FF3259;
+		font-size: 17px;
+		font-family: RobotoLight, Arial;
 	}
 
 	#emika-mob .emika form > div > input:hover {
 		opacity: 1;
 	}
 
-	#emika-mob .emika form > div > input[type="number"] {
-		padding: 10px 2%;
+	#emika-mob .emika form > div > select {
+		width: 100%;
+		padding: 9px 2%;
 	}
 	#emika-mob .emika form > input[type="submit"] {
 		margin: 0 auto;
@@ -702,11 +705,13 @@ section {
 		background-color: rgba(255, 92, 92, 0.9);
 		border: 0;
 		border-radius: 2px;
-		font-size: 15px;
+		font-size: 16px;
+		font-weight: bold;
 		text-transform: uppercase;
 		color: white;
 		outline: none;
 		width: 100%;
+		font-family: RobotoLight, Arial;
 	}
 	#emika-mob .emika form > input[type="submit"]:hover {
 		background-color: rgba(255, 92, 92, 1);

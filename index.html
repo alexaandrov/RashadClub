@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery_ui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery_ui/jquery-ui.structure.min.css" />
+	<link rel="stylesheet" href="css/jquery_ui/jquery-ui.theme.min.css" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -48,24 +51,37 @@
 			<form name="EmikaPms" method="POST">
 				<div>
 					<p>Въезд</p>
-					<input type="date" name="check-in" class="checkIn"></input>
+					<input type="text" readonly name="check-in" placeholder="дд.мм.гг" class="checkIn"></input>
 				</div>
 				<div>
 					<p>Выезд</p>
-					<input type="date" name="check-out" class="checkOut"></input>
+					<input type="text" readonly name="check-out" placeholder="дд.мм.гг" class="checkOut"></input>
 				</div>
 				<div>
 					<p>Взрослых</p>
-					<input type="number" name="adults" maxlength="2" value="1" class="adults"></input>
+					<select name="adults" class="adults">
+						<option>1</option>
+						<option selected="selected">2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
 				</div>
 				<div>
 					<p>Детей</p>
-					<input type="number" name="children" maxlength="2" value="1" class="children"></input>
+					<select name="children" class="children">
+						<option>0</option>
+						<option selected="selected">1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
 				</div>
 				<input type="submit" name="check" value="Проверить" class="submit"></input>
 			</form>
 		</div>
-		<!-- Конец блока -->
+		<!-- Конец Emika widget -->
 	</div>
 	<!-- Конец секции -->
 
@@ -76,24 +92,37 @@
 			<form name="EmikaPms" method="POST">
 				<div>
 					<p>Въезд</p>
-					<input type="date" name="check-in" class="checkIn"></input>
+					<input type="text" readonly name="check-in" placeholder="дд.мм.гг" class="checkIn"></input>
 				</div>
 				<div>
 					<p>Выезд</p>
-					<input type="date" name="check-out" class="checkOut"></input>
+					<input type="text" readonly name="check-out" placeholder="дд.мм.гг" class="checkOut"></input>
 				</div>
 				<div>
 					<p>Взрослых</p>
-					<input type="number" name="adults" maxlength="2" value="1" class="adults"></input>
+					<select name="adults" class="adults">
+						<option>1</option>
+						<option selected="selected">2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
 				</div>
 				<div>
 					<p>Детей</p>
-					<input type="number" name="children" maxlength="2" value="1" class="children"></input>
+					<select name="children" class="children">
+						<option>0</option>
+						<option selected="selected">1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
 				</div>
 				<input type="submit" name="check" value="Проверить" class="submit"></input>
 			</form>
 		</div>
-		<!-- Конец блока -->
+		<!-- Конец Emika widget -->
 	</div>
 	<!-- EmikaPMS mob widget -->
 	<p id="txt" align="center">default</p>
@@ -251,8 +280,13 @@
 <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34508410 = new Ya.Metrika({ id:34508410, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34508410" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 <!-- Конец -->
 <!-- SCRIPTS -->
-<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<!-- Jquery --><!-- 
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+<script src="js/jquery/jquery-2.2.0.min.js"></script>
+<script src="js/jquery/jquery-ui.min.js"></script>
+<script src="js/jquery/datepicker-ru.js"></script>
 <script src="js/emika.js"></script>
+<!-- /Jquery -->
 </body>
 </html>
 

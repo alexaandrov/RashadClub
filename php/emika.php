@@ -3,8 +3,8 @@
 
 	include_once('db.php');
 	
-	$checkIn = strip_tags(trim($_POST['checkIn']));
-	$checkOut = strip_tags(trim($_POST['checkOut']));
+	$checkIn = date("Y-m-d", strtotime(strip_tags(trim($_POST['checkIn']))));
+	$checkOut = date("Y-m-d", strtotime(strip_tags(trim($_POST['checkOut']))));
 	$adults = strip_tags(trim($_POST['adults']));
 	$children = strip_tags(trim($_POST['children']));
 	
