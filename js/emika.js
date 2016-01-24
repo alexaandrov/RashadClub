@@ -9,8 +9,8 @@ $(function () {
 		showOtherMonths: true,
 		dateFormat: "dd.mm.yy"
 	});
-	date[1].value = $(".emika input[type=text]").datepicker("getDate");
-	// $(".emika select").selectmenu();
+	$(".emika .checkIn").datepicker('setDate', '1');
+	$(".emika .checkOut").datepicker('setDate', '3');
 	function checkIssues(date) {
 		var checkIn = date[0].value;
 		var checkOut = date[1].value;
