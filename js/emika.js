@@ -1,35 +1,50 @@
 $(function () {
-	var emikaBtnCheck = $(".emika:eq(0) .submit");
-	var emikaMobBtnCheck = $(".emika:eq(1) .submit");
-
-	var date = $(".emika:eq(1) :input");
+	var checkIn = $(".emika .checkIn");
+	var checkOut = $(".emika .checkOut");
+	var adults = $(".emika .adults");
+	var children =$(".emika .children");
 	$.datepicker.setDefaults($.datepicker.regional['ru']);
-	$(".emika input[type=text]").datepicker({
-		minDate: "0",
-		showOtherMonths: true,
-		dateFormat: "dd.mm.yy"
-	});
-	$(".emika .checkIn").datepicker('setDate', '1');
-	$(".emika .checkOut").datepicker('setDate', '3');
-	function checkIssues(date) {
-		var checkIn = date[0].value;
-		var checkOut = date[1].value;
-		var adults = date[2].value;
-		var children = date[3].value;
+		$(".emika input[type=text]").datepicker({
+			minDate: "0",
+			showOtherMonths: true,
+			showButtonPanel: true,
+			dateFormat: "dd.mm.yy"
+		});
+	checkIn.datepicker('setDate', '1');
+	checkOut.datepicker('setDate', '3');
 
-		// Проверка на адекватность чисел
-		if (adults > 7 || children > 5) {
-			alert("Номер не расчитан на такое кол-во посетителей");
-		} else {
-			sendInfo(date);
-		}
+	// Определяет с какой формой работает посетитель
+	var emikaFormsArray = $(".emika");
+
+	emikaFormsArray.click(function(e) {
+		e.preventDefault();
+		initCurrentEmikaForm(emikaFormsArray.index(this));
+	});
+
+	// Инициализирует выбранную форму
+	function initCurrentEmikaForm(emikaFormNumber) {
+		var emikaCurrentFormBtn = $(".emika input[type=submit]").eq(emikaFormNumber);
+		// Если нажата кнопка "Проверить" компьютере
+		emikaCurrentFormBtn.click(function(e) {
+			e.preventDefault();
+			emikaFormNumber = $(".emika input[type=submit").index(this);
+			sendInfo(emikaFormNumber);
+		});
+
+		// Вызов календаря "Выезд" сразу после закрытия календаря "Въезд"
+		checkIn.change(function() {
+			var intervalID = setInterval(function() {
+					checkOut.eq(emikaFormNumber).datepicker('show');
+					clearInterval(intervalID);
+				}, 0150);
+		});
 	}
 
-	function sendInfo(date) {
-		var checkIn = date[0].value;
-		var checkOut = date[1].value;
-		var adults = date[2].value;
-		var children = date[3].value;
+	function sendInfo(formNumber) {
+		var checkInVal = checkIn[formNumber].value;
+		var checkOutVal = checkOut[formNumber].value;
+		var adultsVal = adults[formNumber].value;
+		var childrenVal = children[formNumber].value;
 
 		function funcBefore() {
 			$("#txt").text ("Ожидание данных");
@@ -44,28 +59,16 @@ $(function () {
 			url: "../php/emika.php",
 			type: "POST",
 			data: {
-			  checkIn: checkIn,
-			  checkOut: checkOut,
-			  adults: adults,
-			  children: children
+			  checkIn: checkInVal,
+			  checkOut: checkOutVal,
+			  adults: adultsVal,
+			  children: childrenVal
 			},
 			beforeSend: funcBefore,
 			success: funcSucces
 		});
 	}
-
-	// Если нажата кнопка "Проверить" компьютере
-	emikaBtnCheck.click(function(e) {
-		e.preventDefault();
-		var date = $(".emika:eq(0) :input").serializeArray();
-		checkIssues(date);
-	});
-		
-	// Если нажата кнопка "Проверить" с телефона
-	emikaMobBtnCheck.click(function(e) {
-		e.preventDefault();
-		var date = $(".emika:eq(1) :input").serializeArray();
-		checkIssues(date);
-	});
 });
 
+
+// Ошибка с отправкой формы (где-то зацикливается)

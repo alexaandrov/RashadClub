@@ -712,6 +712,7 @@ section {
 		outline: none;
 		width: 100%;
 		font-family: RobotoLight, Arial;
+		cursor: pointer;
 	}
 	#emika-mob .emika form > input[type="submit"]:hover {
 		background-color: rgba(255, 92, 92, 1);
