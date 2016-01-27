@@ -1,4 +1,4 @@
-$(function () {
+$(function emikaFormListener() {
 	var checkIn = $(".emika .checkIn");
 	var checkOut = $(".emika .checkOut");
 	var adults = $(".emika .adults");
@@ -14,26 +14,28 @@ $(function () {
 	checkIn.datepicker('setDate', '1');
 	checkOut.datepicker('setDate', '3');
 
-	// Определяет с какой формой работает посетитель
-	var emikaFormsArray = $(".emika");
+	var emikaFormNumber;
 
+	// Определяет с какой формой работает посетитель
+	var emikaCurrentFormBtn = $(".emika .submit")
+	// Если нажата кнопка "Проверить" компьютере
+	emikaCurrentFormBtn.click(function(e) {
+		e.preventDefault();
+		emikaFormNumber = $(".emika .submit").index(this);
+		sendInfo(emikaFormNumber);
+	});
+
+	var emikaFormsArray = $(".emika");
 	emikaFormsArray.click(function(e) {
 		e.preventDefault();
-		initCurrentEmikaForm(emikaFormsArray.index(this));
+		var emikaFormNumber = emikaFormsArray.index(this);
+		initCurrentEmikaForm(emikaFormNumber);
 	});
 
 	// Инициализирует выбранную форму
 	function initCurrentEmikaForm(emikaFormNumber) {
-		var emikaCurrentFormBtn = $(".emika .submit").eq(emikaFormNumber);
-		// Если нажата кнопка "Проверить" компьютере
-		emikaCurrentFormBtn.click(function(e) {
-			e.preventDefault();
-			emikaFormNumber = $(".emika .submit").index(this);
-			sendInfo(emikaFormNumber);
-		});
-
 		// Вызов календаря "Выезд" сразу после закрытия календаря "Въезд"
-		checkIn.change(function() {
+		checkIn.eq(emikaFormNumber).change(function() {
 			var intervalID = setInterval(function() {
 					checkOut.eq(emikaFormNumber).datepicker('show');
 					clearInterval(intervalID);
@@ -70,6 +72,3 @@ $(function () {
 		});
 	}
 });
-
-
-// Ошибка с отправкой формы (где-то зацикливается)
