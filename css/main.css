@@ -31,13 +31,13 @@ h3 {
 /* IMPORT FONTS */
 /* font-family: "RobotoLight"; */
 @font-face {
-    font-family: "RobotoLight";
-    src: url("../fonts/RobotoLight/RobotoLight.eot");
-    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }
 
 /* font-family: "Poiret One"; */
@@ -81,8 +81,8 @@ h3 {
 	background-position: center;
 	margin: 0 auto;
 	z-index: 1;
-    width: 100%;
-    height: 650px;
+	width: 100%;
+	height: 650px;
 	padding: 0;
 	overflow: hidden;
 }
@@ -243,70 +243,104 @@ h3 {
 /* EmikaPms виджет */
 #top .emika {
 	margin: 0 auto;
-	margin-top: 30px;
-	max-width: 860px;
+	margin-top: 25px;
+	max-width: 1180px;
 	width: 100%;
-	background-color: rgba(0,0,0, 0.6);
 }
 
 #top .emika form {
+	background-color: rgba(0,0,0, 0.6);
+	margin: 0 20px;
+	height: 90px;
+	padding: 2px 20px;
 	border-radius: 1px;
 }
 
 #top .emika form > div {
-	display: inline-block;
-	margin: 10px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 20%;
 }
 
-#top .emika form > div > input, select {
-	padding: 10px;
-	margin: 2px 0;
-	border: 0;
+#top .emika form > div > select {
+	width: 95%;
+	padding: 0.95em 0.3em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	background-image: url(../img/icons/drop_down.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	/* Убрать выделение текста на блоке */
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#top .emika form > div > input,select {
+	margin: 0;
+	width: 92%;
+	padding: 1em 0.3em;
 	border-radius: 1px;
+	border: 0;
+	opacity: 1;
+	cursor: pointer;
 	opacity: 0.9;
+	background-color: white;
+	outline: none;
+}
+
+#top .emika form > div > select:hover {
+	opacity: 1;
 }
 
 #top .emika form > div > input:hover {
 	opacity: 1;
 }
 
-#top .emika form > div > select {
-	width: 100%;
-	padding: 9px;
-}
-
-#top .emika form > input[type="submit"] {
-	padding: 15px 50px;
-	position: absolute;
-	margin-top: 32px;
-	margin-left: 10px;
-	background-color: rgba(255, 92, 92, 0.9);
+#top .emika form  .submit {
+	margin-top: 35px;
+	overflow: hidden;
+	padding: 10px 0;
+	font-size: 1em;
+	text-align: center;
 	border: 0;
-	border-radius: 2px;
-	font-size: 15px;
+	border-radius: 1px;
 	text-transform: uppercase;
 	color: white;
-	outline: none;
+	background-color: rgba(255, 92, 92, 0.9);
 	cursor: pointer;
+	/* Убрать выделение текста на блоке */
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	outline: none;
 }
 
-#top .emika form > input[type="submit"]:hover {
+#top .emika form  .submit:hover {
 	background-color: rgba(255, 92, 92, 1);
 }
-#top .emika form > input[type="submit"]:active {
+
+#top .emika form  .submit:active {
 	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
-#top .emika form > div p {
+#top .emika form > div > p {
 	color: white;
-	padding: 0;
-	padding-bottom: 5px;
-	font-size: 20px;
 	margin: 0;
+	padding: 0;
+	padding: 5px 0px;
+	font-size: 1.2em;
 	font-weight: bolt;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	font-family: "RobotoLight", "Arial";
 }
 
@@ -681,23 +715,41 @@ section {
 	}
 	#emika-mob .emika form > div > input,select {
 		padding: 10px 2%;
-		border: 1px solid #bdbdbd;;
+		border: 1px solid #bdbdbd;
 		border-radius: 1px;
-		opacity: 0.9;
 		color: #FF3259;
 		font-size: 17px;
 		font-family: RobotoLight, Arial;
+		cursor: pointer;
+		background-color: white;
 	}
 
-	#emika-mob .emika form > div > input:hover {
-		opacity: 1;
+	#emika-mob .emika form > div > select:active {
+		-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+			box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+	}
+
+	#emika-mob .emika form > div > input:active {
+		-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+			box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
 	}
 
 	#emika-mob .emika form > div > select {
 		width: 100%;
 		padding: 9px 2%;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none!important;
+		text-indent: 0.01px; 
+		text-overflow: '';
+		background-image: url(../img/icons/drop_down.png);
+		background-position: right center;
+		background-repeat: no-repeat;
 	}
-	#emika-mob .emika form > input[type="submit"] {
+	#emika-mob .emika form > .submit {
 		margin: 0 auto;
 		padding: 15px 0;
 		margin-top: 25px;
@@ -709,25 +761,27 @@ section {
 		font-weight: bold;
 		text-transform: uppercase;
 		color: white;
-		outline: none;
 		width: 100%;
 		font-family: RobotoLight, Arial;
 		cursor: pointer;
+		text-align: center;
+		/* Убрать выделение текста на кнопке */
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		outline: none;
 	}
-	#emika-mob .emika form > input[type="submit"]:hover {
+	#emika-mob .emika form > .submit:hover {
 		background-color: rgba(255, 92, 92, 1);
 	}
-	#emika-mob .emika form > input[type="submit"]:active {
+	#emika-mob .emika form > .submit:active {
+		opacity: 0.9;
 		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 	}
 	
-	#emika-mob .emika form .btnCheck {
-		width: 100%;
-		margin: 0 auto;
-		background: red;
-	}
 	#emika-mob .emika form > div p {
 		color: #949494;
 		padding: 0;

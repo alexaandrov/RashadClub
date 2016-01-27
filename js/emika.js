@@ -4,12 +4,13 @@ $(function () {
 	var adults = $(".emika .adults");
 	var children =$(".emika .children");
 	$.datepicker.setDefaults($.datepicker.regional['ru']);
-		$(".emika input[type=text]").datepicker({
-			minDate: "0",
-			showOtherMonths: true,
-			showButtonPanel: true,
-			dateFormat: "dd.mm.yy"
-		});
+	$(".emika input[type=text]").datepicker({
+		minDate: "0",
+		showOtherMonths: true,
+		showButtonPanel: true,
+		dateFormat: "dd.mm.yy"
+	});
+	// $(".emika select").selectmenu();
 	checkIn.datepicker('setDate', '1');
 	checkOut.datepicker('setDate', '3');
 
@@ -23,11 +24,11 @@ $(function () {
 
 	// Инициализирует выбранную форму
 	function initCurrentEmikaForm(emikaFormNumber) {
-		var emikaCurrentFormBtn = $(".emika input[type=submit]").eq(emikaFormNumber);
+		var emikaCurrentFormBtn = $(".emika .submit").eq(emikaFormNumber);
 		// Если нажата кнопка "Проверить" компьютере
 		emikaCurrentFormBtn.click(function(e) {
 			e.preventDefault();
-			emikaFormNumber = $(".emika input[type=submit").index(this);
+			emikaFormNumber = $(".emika .submit").index(this);
 			sendInfo(emikaFormNumber);
 		});
 
