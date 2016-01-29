@@ -30,12 +30,12 @@
 
 	// Сжатие массив с преобразованием его в строку
 	function compressDataToString($array) {
-		return $string = gzcompress(serialize($array));
+		return $string = base64_encode(gzcompress(serialize($array)));
 	}
 
 	// Разархивация строки с преобразованием в массив
 	function uncompressDataToArray($string) {
-		return $array = unserialize(gzuncompress($string));
+		return $array = unserialize(gzuncompress(base64_decode($string)));
 	}
 
 	// Узнает разницу между датами в днях
