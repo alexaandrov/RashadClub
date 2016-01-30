@@ -15,10 +15,10 @@ body {
 /* font-family: "RobotoLight"; */
 @font-face {
 	font-family: "RobotoLight";
-	src: url("../fonts/RobotoLight/RobotoLight.eot");
-	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	src: url("../../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -62,7 +62,7 @@ h3 {
 	height: 80px;
 	margin: 20px 0px;
 	margin-left: 50px;
-	background-image: url(../img/header/rashad.png);
+	background-image: url(../../img/header/rashad.png);
 	background-size: 100% 80px;
 	background-repeat: no-repeat;
 	-moz-transition: all 0.8s ease-out;
@@ -242,15 +242,15 @@ h3 {
 }
 
 .tps-section:nth-child(1n+1) .tps-wrapper {
-	background: url(../img/hotels/comfort/comfort.jpg) center center;
+	background: url(../../img/hotels/comfort/comfort.jpg) center center;
 	background-size: cover;
 }
 .tps-section:nth-child(2n+1) .tps-wrapper {
-	background:  url(../img/hotels/lux/lux.jpg) center center;
+	background:  url(../../img/hotels/lux/lux.jpg) center center;
 	background-size: cover;
 }
 .tps-section:nth-child(3n+1) .tps-wrapper {
-	background:  url(../img/hotels/vip/vip.jpg) center center;
+	background:  url(../../img/hotels/vip/vip.jpg) center center;
 	background-size: cover;
 }
 .tps-section:nth-child(4n+1) .tps-wrapper {
@@ -275,7 +275,7 @@ h3 {
 
 .footer .rashad {
 	margin: 0 auto;
-	background-image: url(../img/header/rashad-mini-two.png);
+	background-image: url(../../img/header/rashad-mini-two.png);
 	background-size: 100% 100%;
 	width: 180px;
 	height: 59px;
