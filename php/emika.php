@@ -1,31 +1,84 @@
 <?php
+	include_once('db.php');
 	// echo $_POST['checkIn']." ".$_POST['checkOut']." ".$_POST['adults']." ".$_POST['children'];
 
-	include_once('db.php');
 	
 	// Инициализация полей формы
+	$rooms = array("comfort", "lux", "vip");
 	$checkIn = date("Y-m-d", strtotime(strip_tags(trim($_POST['checkIn']))));
 	$checkOut = date("Y-m-d", strtotime(strip_tags(trim($_POST['checkOut']))));
 	$adults = strip_tags(trim($_POST['adults']));
 	$children = strip_tags(trim($_POST['children']));
-	
-	// Вывод введенных данных
-	echo $checkIn." ".$checkOut." ".$adults." ".$children;
+	$freeRooms;
+
+// 				*** Выборка и проверка данных из БД *** 				//
+
+	$reservDays = getArrayReservDays($checkIn, $checkOut);
+	pullArrayReservDays($reservDays, $rooms);
+
+	function pullArrayReservDays($reservDays, $rooms) {
+		foreach ($rooms as $room) {
+			$result[$room] = mysql_query(" SELECT reservDays FROM emikaq WHERE room = '$room'");
+			checkOnFreeRoom($reservDays, $room, $result);
+		}
+		mysql_close();
+	}
+
+	function checkOnFreeRoom($reservDays, $room, $result) {
+		while ($roomReservDays[$room] = mysql_fetch_array($result[$room])) {
+			$roomReservDays = uncompressDataToArray($roomReservDays[$room]['reservDays']);
+			checkEveryDay($reservDays, $roomReservDays, $room);
+		}
+	}
+
+	function checkEveryDay($reservDays, $roomReservDays, $room) {
+		foreach($reservDays as $reservDay) {
+			foreach ($roomReservDays as $roomReservDay) {
+				if ($reservDay == $roomReservDay) {
+					echo " --- --> ".$room;
+					return;
+				}
+			}
+		}
+	}
+
+// 				*** Запись данных в базу данных *** 				//
+	// pushData("vip", "Rami M.B.", $checkIn, $checkOut, getCompressArrayReservDays($checkIn, $checkOut));
+
+	// Отправка всех данных в базу данных
+	function pushData($room, $visitor, $checkIn, $checkOut, $roomReservDays) {
+		mysql_query(" 
+					INSERT INTO emikaq (`room`, `visitor`, `checkIn`, `checkOut`, `reservDays`) 
+					VALUES ('$room', '$visitor', '$checkIn', '$checkOut', '$roomReservDays');
+					");
+		echo "Success";
+	}
 
 	// Создание массив с датами от Въезда(checkIn) до Выезда(checkOut),
 	// с последующие конвертацией в строку и сжатием для БД
+	function getCompressArrayReservDays($startDate, $endDate) {
+		$intervalDiffDates = dateDifference($startDate, $endDate);
+		// Добавление даты заезда в начало массива
+		$reservDays[0] = $startDate;
+		for ($i = 1; $i < $intervalDiffDates; $i++) {
+			$reservDays[$i] = addDayToDate($reservDays[$i-1]);
+		}
+		// Добавление даты выезда в конец массива
+		array_push($reservDays, $endDate);
+		// Возвращение архивированной строки
+		return compressDataToString($reservDays);
+	}
+
 	function getArrayReservDays($startDate, $endDate) {
 		$intervalDiffDates = dateDifference($startDate, $endDate);
 		// Добавление даты заезда в начало массива
-		$reservDaysArr[0] = $startDate;
+		$reservDays[0] = $startDate;
 		for ($i = 1; $i < $intervalDiffDates; $i++) {
-			$reservDaysArr[$i] = addDayToDate($reservDaysArr[$i-1]);
+			$reservDays[$i] = addDayToDate($reservDays[$i-1]);
 		}
 		// Добавление даты выезда в конец массива
-		array_push($reservDaysArr, $endDate);
-		// Возвращение архивированной строки
-		echo compressDataToString($reservDaysArr);
-		return compressDataToString($reservDaysArr);
+		array_push($reservDays, $endDate);
+		return $reservDays;
 	}
 
 	// Сжатие массив с преобразованием его в строку
@@ -35,7 +88,7 @@
 
 	// Разархивация строки с преобразованием в массив
 	function uncompressDataToArray($string) {
-		return $array = unserialize(gzuncompress(base64_decode($string)));
+		return unserialize(gzuncompress(base64_decode($string)));
 	}
 
 	// Узнает разницу между датами в днях
@@ -56,47 +109,4 @@
 		return $date->format('Y-m-d');
 	}
 
-	// Конвертация массива в строку для mysql
-
-	$reservDays = getArrayReservDays($checkIn, $checkOut);
-	mysql_query(" 
-				INSERT INTO `p9247_rashadclub`.`req` (`reservDays`) 
-				VALUES ('$reservDays');
-				");
-
-
-
-
-
-	// $string = gzcompress(serialize(getArrayReservDays($checkIn, $checkOut)));
-	// echo $string;
-	// $array = unserialize(gzuncompress($string));
-	// print_r($array);
-
-	// Есть ли свободны комнаты, по умолчанию нет
-	// $checkFreeRoom = false;
-	// $checkInArr = mysql_fetch_array(mysql_query(" SELECT `checkIn` FROM `emika` "));
-	// $checkOutArr = mysql_fetch_array(mysql_query(" SELECT `checkOut` FROM `emika` "));
-	// for ($i = 0; $i < count($checkInArr); $i++) {
-	// 	if ("$checkIn" == "$checkInArr[$i]" || "$checkOut" == "$checkOutArr[$i]") {
-	// 		echo " Date has in db ";
-	// 	} else {
-	// 		$checkFreeRoom = true;
-	// 	}
-	// }
-
-
-	// $y = 2016; 
-	// $m = 5; 
-	// $d = -2; 
-
-	// $dt = mktime(0,0,0,$m,$d,$y); 
-	// echo( date('Y-m-d',$dt) );
-
-	// mysql_query(" 
-	// 			INSERT INTO `p9247_rashadclub`.`emika` (`checkIn`, `checkOut`, `adults`, `children`) 
-	// 			VALUES ('$checkIn', '$checkOut', '$adults', '$children');
-	// 			");
-	
-	// mysql_close();
 ?>
