@@ -1,2 +1,4 @@
 /*.settings
-/*.db
+*DB.php
+/*.TODO
+/.idea
