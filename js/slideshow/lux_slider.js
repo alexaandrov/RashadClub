@@ -1,10 +1,10 @@
 var slider = {
-    slides:['../img/hotels/lux/slideshow/1.jpg',
-    '../img/hotels/lux/slideshow/2.jpg',
-    '../img/hotels/lux/slideshow/3.jpg',
-    '../img/hotels/lux/slideshow/4.jpg',
-    '../img/hotels/lux/slideshow/5.jpg',
-    '../img/hotels/lux/slideshow/6.jpg',],
+    slides:['../../../img/hotels/lux/slideshow/1.jpg',
+    '../../../img/hotels/lux/slideshow/2.jpg',
+    '../../../img/hotels/lux/slideshow/3.jpg',
+    '../../../img/hotels/lux/slideshow/4.jpg',
+    '../../../img/hotels/lux/slideshow/5.jpg',
+    '../../../img/hotels/lux/slideshow/6.jpg',],
     frame:4, // текущий кадр для отбражения - индекс картинки из массива
     lastFrame:0,
     set: function(image) { // установка нужного фона слайдеру

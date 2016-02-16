@@ -1,9 +1,9 @@
 var slider = {
-    slides:['../img/hotels/comfort/slideshow/1.jpg',
-    '../img/hotels/comfort/slideshow/2.jpg',
-    '../img/hotels/comfort/slideshow/3.jpg',
-    '../img/hotels/comfort/slideshow/4.jpg',
-    '../img/hotels/comfort/slideshow/5.jpg',],
+    slides:['../../../img/hotels/comfort/slideshow/1.jpg',
+    '../../../img/hotels/comfort/slideshow/2.jpg',
+    '../../../img/hotels/comfort/slideshow/3.jpg',
+    '../../../img/hotels/comfort/slideshow/4.jpg',
+    '../../../img/hotels/comfort/slideshow/5.jpg',],
     frame:4, // текущий кадр для отбражения - индекс картинки из массива
     lastFrame:0,
     set: function(image) { // установка нужного фона слайдеру
