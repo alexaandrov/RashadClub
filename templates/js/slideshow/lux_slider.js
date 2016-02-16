@@ -1,13 +1,10 @@
 var slider = {
-    slides:['../../../img/hotels/vip/slideshow/1.jpg',
-    '../../../img/hotels/vip/slideshow/2.jpg',
-    '../../../img/hotels/vip/slideshow/3.jpg',
-    '../../../img/hotels/vip/slideshow/4.jpg',
-    '../../../img/hotels/vip/slideshow/5.jpg',
-    '../../../img/hotels/vip/slideshow/6.jpg',
-    '../../../img/hotels/vip/slideshow/7.jpg',
-    '../../../img/hotels/vip/slideshow/8.jpg',
-    '../../../img/hotels/vip/slideshow/9.jpg',],
+    slides:['../../../templates/img/hotels/lux/slideshow/1.jpg',
+    '../../../templates/img/hotels/lux/slideshow/2.jpg',
+    '../../../templates/img/hotels/lux/slideshow/3.jpg',
+    '../../../templates/img/hotels/lux/slideshow/4.jpg',
+    '../../../templates/img/hotels/lux/slideshow/5.jpg',
+    '../../../templates/img/hotels/lux/slideshow/6.jpg'],
     frame:4, // текущий кадр для отбражения - индекс картинки из массива
     lastFrame:0,
     set: function(image) { // установка нужного фона слайдеру
@@ -95,4 +92,4 @@ function sliderInit() {
     setInterval(function() { // интервал для перелистывания картинок
         slider.right();
     }, durationSlide);
-};
+}
